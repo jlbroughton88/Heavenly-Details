@@ -1,1 +1,33 @@
+/* html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 1rem;
+    font-family:"Museo Sans";
+    letter-spacing: 1px;
+} */
 
+html {
+    width:100%;
+    height: 100%;
+    display: table;
+    font-family:"Museo Sans";
+}
+
+body {
+    width:100%;
+    display:table-cell;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+#root{
+    height: 100%;
+}
+
+@font-face {
+    font-family:"Museo Sans";
+    src: url("./components/fonts/museoSans.ttf") format("TrueType");
+  }
