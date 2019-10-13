@@ -1,0 +1,23 @@
+{
+  "name": "heavenly-details",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm start",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlbroughton88/Heavenly-Details.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlbroughton88/Heavenly-Details/issues"
+  },
+  "homepage": "https://github.com/jlbroughton88/Heavenly-Details#readme"
+}
