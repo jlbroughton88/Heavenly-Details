@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-app.get("/", (req, res) => {
+  app.get("/", (req, res) => {
     res.send("Hello from server")
 })
 
@@ -17,7 +17,8 @@ if(process.env.NODE_ENV === "production") {
       res.sendFile(path.join(__dirname, "./client/public/index.html"))
     })
   }
-  
+
+
 
 app.listen(process.env.PORT || 5001, () => {
     console.log("Server listening on port 5001")
