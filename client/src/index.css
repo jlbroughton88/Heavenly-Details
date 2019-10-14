@@ -8,15 +8,16 @@
 } */
 
 html {
-    width:100%;
+    width: 100%;
     height: 100%;
     display: table;
     font-family:"Museo Sans";
 }
 
 body {
-    width:100%;
-    display:table-cell;
+    width: 100%;
+    height: 100%;
+    /* display:table-cell; */
 }
 
 html, body {
@@ -24,6 +25,7 @@ html, body {
     padding: 0px;
 }
 #root{
+    width: 100%;
     height: 100%;
 }
 

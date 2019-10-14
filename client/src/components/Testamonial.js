@@ -1,20 +1,16 @@
 import React from 'react'
 import styled from "styled-components";
+import Exterior from "./images/photos/exterior.jpeg"
 
 const Testamonial = () => {
     return (
         <MotherDiv>
-            <LeftDiv>
-                <H3>"It looks brand new!"</H3>
-                <Para>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Ut aliquet elit quis dolor sagittis bibendum. Vestibulum ultrices,
-                    eros feugiat suscipit pharetra.
-                </Para>
-            </LeftDiv>
-            <RightDiv>
-                <Car>Picture of Car</Car>
-            </RightDiv>
+            <Container>
+                <HeadDiv>
+                    <Head>"It looks brand new!"</Head>
+                </HeadDiv>
+                
+            </Container>
         </MotherDiv>
     )
 }
@@ -22,35 +18,42 @@ const Testamonial = () => {
 export default Testamonial;
 
 const MotherDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    height: 300px;
-`
-
-const LeftDiv = styled.div`
+    height: 30%;
     display: flex;
     flex-direction: column;
-    width: 50%;
     justify-content: space-evenly;
     align-items: center;
-    text-align: center;
-    padding: 3%;
-`
-const RightDiv = styled.div`
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
+    background: #f8f9fb;
+    max-height: 350px;
+
 `
 
-const H3 = styled.h3`
-    margin: 0;
-    font-size: 1.5rem;
+const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    background: url(${Exterior}) no-repeat center/contain;
+    color: black;
+
+    @media(max-width: 650px) {
+        width: 100%;
+        transform: scale(1.1);
+    }
 `
-const Para = styled.p`
-    margin: 0;
+
+const HeadDiv = styled.div`
+    padding: 3px 3px;
+    background: white;
+    border-radius: 3px;
 `
-const Car = styled.p`
+
+const Head = styled.h3`
     margin: 0;
+    font-size: 2rem;
+
+    @media(max-width: 650px) {
+        font-size: 1.7rem;
+    }
 `
