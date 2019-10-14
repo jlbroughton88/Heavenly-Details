@@ -15,12 +15,14 @@ const Footer = () => {
 
 export default Footer;
 
-const MotherDiv = styled.div`
-    background: lightblue;
-    height: 4%;
+const MotherDiv = styled.footer`
+    height: 5%;
+    background: #008C96;
+    color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
+
 `
 
 const LinksDiv = styled.div`

@@ -4,43 +4,55 @@ import styled from "styled-components";
 const FAQ = () => {
     return (
         <MotherDiv>
-            <HeadRow>
-                <HeadDiv>
-                    <Head>FAQ</Head>
-                </HeadDiv>
-            </HeadRow>
+            <FaqRow>
+                <FaqDiv>
+                    <FaqHead>FAQ</FaqHead>
+                </FaqDiv>
+            </FaqRow>
             <Rows>
                 <Row>
-                    <RowHeadDiv>
-                        <RowHead>How much do you charge?</RowHead>
-                    </RowHeadDiv>
+                    <HeadRow>
+                                            <HeadDiv>
+                        <Head>How much do you charge?</Head>
+                    </HeadDiv>
+                    </HeadRow>
+
                     <ParaDiv>
-                        <RowPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor sagittis bibendum. Vestibulum ultrices, eros feugiat suscipit pharetra, enim velit facilisis tellus</RowPara>
+                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
                     </ParaDiv>
 
                 </Row>
                 <Row>
-                    <RowHeadDiv>
-                        <RowHead>Will my paint get damaged?</RowHead>
-                    </RowHeadDiv>
+                <HeadRow>
+                             <HeadDiv>
+                        <Head>Will my paint get damaged?</Head>
+                    </HeadDiv>
+                </HeadRow>
+           
                     <ParaDiv>
-                        <RowPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor sagittis bibendum. Vestibulum ultrices, eros feugiat suscipit pharetra, enim velit facilisis tellus</RowPara>
+                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
                     </ParaDiv>
                 </Row>
                 <Row>
-                    <RowHeadDiv>
-                        <RowHead>Why not use a drive-thru carwash?</RowHead>
-                    </RowHeadDiv>
+                <HeadRow>
+                                 <HeadDiv>
+                        <Head>Why not use a drive-thru carwash?</Head>
+                    </HeadDiv>
+                </HeadRow>
+       
                     <ParaDiv>
-                        <RowPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor sagittis bibendum. Vestibulum ultrices, eros feugiat suscipit pharetra, enim velit facilisis tellus</RowPara>
+                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
                     </ParaDiv>
                 </Row>
                 <Row>
-                    <RowHeadDiv>
-                        <RowHead>Will I have to drop my car off?</RowHead>
-                    </RowHeadDiv>
+                <HeadRow>
+                                        <HeadDiv>
+                        <Head>Will I have to drop my car off?</Head>
+                    </HeadDiv>
+                </HeadRow>
+
                     <ParaDiv>
-                        <RowPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor sagittis bibendum. Vestibulum ultrices, eros feugiat suscipit pharetra, enim velit facilisis tellus</RowPara>
+                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
                     </ParaDiv>
                 </Row>
             </Rows>
@@ -52,66 +64,104 @@ const FAQ = () => {
 export default FAQ;
 
 const MotherDiv = styled.div`
+    height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
-`
-
-const Rows = styled.div`
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    background: #f8f9fb;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+    @media(max-width: 750px) {
+        height: 45%;
+    }
+
+    @media(max-width: 650px) {
+        height: 40%;
+    }
 `
 
-
-
-const HeadRow = styled.div`
+// FAQ
+const FaqRow = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 `
 
-const HeadDiv = styled.div`
+const FaqDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
     width: 33%;
 `
 
-const Head = styled.h3`
-    font-size: 1.65rem;
+const FaqHead = styled.h3`
+    font-size: 3rem;
+    margin: 0;
+    border-bottom: 1px solid #008C96;
+`
+
+// ROWS
+const Rows = styled.div`
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 `
 
 const Row = styled.div`
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
-    width: 90%;
-`
-
-const RowHeadDiv = styled.div`
-    display: flex;
     width: 100%;
 `
 
-const RowHead = styled.h3`
+const HeadRow = styled.div`
+    width: 100%;
+`
+
+const HeadDiv = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 13%;
+
+    @media(max-width: 800px) {
+        width: 65%;
+    }
+
+    @media(max-width: 600px) {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+`
+
+const Head = styled.h3`
     align-self: flex-start;
-    font-size: 1.3rem
-    padding: 2.5%;
+    font-size: 1.6rem
     margin: 0;
 `
 
 const ParaDiv = styled.div`
+    padding-left:17.5%;
+    padding-right: 17.5%;
     margin: 0;
-    padding: 10%;
-    padding-top: 0;
-    padding-bottom: 0;
+    margin-top: 1%;
+
+    @media(max-width: 600px) {
+        text-align: center;
+    }
 `
 
-const RowPara = styled.p`
+const Para = styled.p`
+    font-size: 1.2rem;
     margin: 0;
 `
 
