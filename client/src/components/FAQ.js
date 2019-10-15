@@ -164,7 +164,8 @@ const HeadDiv = styled.div`
     @media(max-width: 500px) {
         justify-content: flex-start;
         font-size: 1.4rem;
-        margin-left: 25px;
+        width: 95%;
+        margin-left: 5%;
     }
 
 `

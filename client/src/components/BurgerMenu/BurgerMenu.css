@@ -1,0 +1,97 @@
+/* BURGER MENU */
+
+/* Position and sizing of burger button */
+
+.hamburgerMenu{
+    position: fixed;
+  }
+  
+  
+  .bm-burger-button {
+      position: relative;
+      width: 36px;
+      height: 30px;
+      margin-right: 5%;
+      right: 60%;
+      outline: none;
+      border: none;
+    }
+  
+    @media(min-width: 501px) {
+      .bm-burger-button{ display: none; }
+  }
+  
+  
+    /* Color/shape of burger icon bars */
+    .bm-burger-bars {
+      background: #373a47;
+      transition: all .15s ease-out;
+    }
+     
+    /* Color/shape of burger icon bars on hover*/
+    .bm-burger-bars-hover {
+      background-color: #feda6a;
+    }
+     
+  
+    /* Color/shape of close button cross */
+    .bm-cross {
+      background-color: #feda6a;
+      width: 25px;
+    }
+     
+    /*
+    Sidebar wrapper styles
+    Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+    */
+    .bm-menu-wrap {
+      position: fixed;
+      height: 100%;
+    }
+     
+    /* General sidebar styles */
+    .bm-menu {
+      background: #373a47;
+      padding: 2.5em 1.5em 0;
+      font-size: 1.15em;
+      margin-top: -14%;
+      display: flex;
+      justify-content: center;
+      border-left: #d4d4dc solid 1px;
+    }
+     
+     
+    /* Wrapper for item list */
+    .bm-item-list {
+      color: #b8b7ad;
+      padding: 0.8em;
+    }
+     
+    /* Individual item */
+    .bm-item {
+      display: inline-block;
+      margin: 20%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+     
+    /* Styling of overlay */
+    .bm-overlay {
+      background: rgba(0, 0, 0, 0.2);
+      margin-left: 31%;
+  
+    }
+    @media(min-width: 501px) {
+      .bm-overlay{ display: none; }
+  }
+  
+    .menu-item{
+        color: #d4d4dc;
+        text-decoration: none;
+        outline: none;
+        transition: all .3s ease-out;
+    }
+  
+    .menu-item:hover{
+      color:#879FFF;
+    }

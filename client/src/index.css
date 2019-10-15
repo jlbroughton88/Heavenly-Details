@@ -35,3 +35,16 @@ html, body {
     font-family:"Museo Sans";
     src: url("./components/fonts/museoSans.ttf") format("TrueType");
   }
+
+  @media(min-width: 501px) {
+    
+    .normalNav{ display: inline-block};
+    .link{ display: inline-block };
+    .hamburgerMenu{ display: none; };
+}
+
+@media(max-width: 500px) {
+    .link{ display: none }
+    .normalNav{ display: none; };
+    .hamburgerMenu{ display: inline-block; }
+}
