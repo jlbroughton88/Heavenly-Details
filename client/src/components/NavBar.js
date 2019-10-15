@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from "styled-components"
+import BurgerMenu from "./BurgerMenu/BurgerMenu"
 
 
-function NavBar() {
+const NavBar = () => {
     return (
         <MotherDiv>
             <LeftDiv>
@@ -12,14 +13,13 @@ function NavBar() {
             </LeftDiv>
 
             <RightDiv>
-                <NavLinks>
-                    <AboutLink>About</AboutLink>
-                    <WorkLink>Work</WorkLink>
-                    <ContactLink>Contact</ContactLink>
+                <NavLinks className="normalNav">
+                    <AboutLink className="link">About</AboutLink>
+                    <WorkLink className="link">Work</WorkLink>
+                    <ContactLink className="link">Contact</ContactLink>
                 </NavLinks>
-
+                <BurgerMenu className="burgerMenu"/>
             </RightDiv>
-
         </MotherDiv>
     )
 }
@@ -29,9 +29,10 @@ export default NavBar;
 const MotherDiv = styled.nav`
     display: flex;
     flex-direction: row;
-    height: 5%;
+    height: 7.5%;
     width: 100%;
     background: lightgrey;
+    min-height: 55px;
 `
 const LeftDiv = styled.div`
     width: 25%;
@@ -62,6 +63,10 @@ const NavLinks = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    @media(max-width: 500px) {
+        width: 75%;
+    }
 `
 
 const AboutLink = styled.p`
