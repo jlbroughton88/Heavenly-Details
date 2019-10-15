@@ -12,44 +12,42 @@ const FAQ = () => {
             <Rows>
                 <Row>
                     <HeadRow>
-                                            <HeadDiv>
-                        <Head>How much do you charge?</Head>
-                    </HeadDiv>
+                        <HeadDiv>
+                            <Head>How much do you charge?</Head>
+                        </HeadDiv>
+                    </HeadRow>
+                    <ParaDiv>
+                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
+                    </ParaDiv>
+                </Row>
+                <Row>
+                    <HeadRow>
+                        <HeadDiv>
+                            <Head>Will my paint get damaged?</Head>
+                        </HeadDiv>
                     </HeadRow>
 
                     <ParaDiv>
                         <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
                     </ParaDiv>
+                </Row>
+                <Row>
+                    <HeadRow>
+                        <HeadDiv>
+                            <Head>Why not use a drive-thru carwash?</Head>
+                        </HeadDiv>
+                    </HeadRow>
 
-                </Row>
-                <Row>
-                <HeadRow>
-                             <HeadDiv>
-                        <Head>Will my paint get damaged?</Head>
-                    </HeadDiv>
-                </HeadRow>
-           
                     <ParaDiv>
                         <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
                     </ParaDiv>
                 </Row>
                 <Row>
-                <HeadRow>
-                                 <HeadDiv>
-                        <Head>Why not use a drive-thru carwash?</Head>
-                    </HeadDiv>
-                </HeadRow>
-       
-                    <ParaDiv>
-                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
-                    </ParaDiv>
-                </Row>
-                <Row>
-                <HeadRow>
-                                        <HeadDiv>
-                        <Head>Will I have to drop my car off?</Head>
-                    </HeadDiv>
-                </HeadRow>
+                    <HeadRow>
+                        <HeadDiv>
+                            <Head>Will I have to drop my car off?</Head>
+                        </HeadDiv>
+                    </HeadRow>
 
                     <ParaDiv>
                         <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
@@ -80,6 +78,11 @@ const MotherDiv = styled.div`
 
     @media(max-width: 650px) {
         height: 40%;
+    }
+
+    @media(max-width: 475px) {
+        padding-bottom: 10%;
+        padding-top: 6%;
     }
 `
 

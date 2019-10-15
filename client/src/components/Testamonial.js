@@ -26,6 +26,10 @@ const MotherDiv = styled.div`
     background: #f8f9fb;
     max-height: 350px;
 
+    @media(max-width: 475px) {
+        height: 250px;
+    }
+
 `
 
 const Container = styled.div`
@@ -39,7 +43,7 @@ const Container = styled.div`
 
     @media(max-width: 650px) {
         width: 100%;
-        transform: scale(1.1);
+        transform: scale(1);
     }
 `
 
