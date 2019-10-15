@@ -30,6 +30,14 @@ const MotherDiv = styled.div`
         height: 250px;
     }
 
+    @media(max-width: 475px) {
+        height: 225px;
+    }
+
+    @media(max-width: 375px) {
+        height: 200px;
+    }
+
 `
 
 const Container = styled.div`
@@ -48,7 +56,7 @@ const Container = styled.div`
 `
 
 const HeadDiv = styled.div`
-    padding: 3px 3px;
+    padding: 3px 5px;
     background: white;
     border-radius: 3px;
 `
@@ -59,5 +67,13 @@ const Head = styled.h3`
 
     @media(max-width: 650px) {
         font-size: 1.7rem;
+    }
+
+    @media(max-width: 475px) {
+        font-size: 1.5rem;
+    }
+
+    @media(max-width: 375px) {
+        font-size: 1.3rem;
     }
 `
