@@ -28,6 +28,11 @@ const MotherDiv = styled.div`
     @media(max-width: 650px) {
         height: 500px;
     }
+
+    @media(max-width: 475px) {
+        height: 30%;
+    }
+    
 `
 
 const Heading = styled.h1`
@@ -37,6 +42,10 @@ const Heading = styled.h1`
     @media(max-width: 650px) {
         font-size: 3.5rem;
     }
+
+    @media(max-width: 475px) {
+        font-size: 2.9rem;
+    }
 `
 
 const Slogan = styled.h3`
@@ -45,6 +54,10 @@ const Slogan = styled.h3`
 
     @media(max-width: 650px) {
         font-size: 1.6rem;
+    }
+
+    @media(max-width: 475px) {
+        font-size: 1.5rem;
     }
 `
 
@@ -62,5 +75,10 @@ const CallToAction = styled.div`
     @media(max-width: 650px) {
         padding: 16px 20px;
         font-size: 1.3rem;
+    }
+
+    @media(max-width: 475px) {
+        padding: 13px 16px;
+        font-size: 1.2rem;
     }
 `

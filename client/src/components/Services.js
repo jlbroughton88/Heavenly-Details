@@ -13,31 +13,31 @@ const Services = () => {
                 <Row>
                     <Task>
                         <TaskHead>Interior Wash</TaskHead>
-                        <TaskPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</TaskPara>
+                        
                     </Task>
                     <Task>
                         <TaskHead>Exterior Wash</TaskHead>
-                        <TaskPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</TaskPara>
+                        
                     </Task>
                 </Row>
                 <Row>
                     <Task>
                         <TaskHead>Wax</TaskHead>
-                        <TaskPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</TaskPara>
+                        
                     </Task>
                     <Task>
-                        <TaskHead>Paint Correction</TaskHead>
-                        <TaskPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</TaskPara>
+                        <TaskHead>Steam</TaskHead>
+                        
                     </Task>
                 </Row>
                 <Row>
                     <Task>
                         <TaskHead>Clay Bar</TaskHead>
-                        <TaskPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</TaskPara>
+                        
                     </Task>
                     <Task>
                         <TaskHead>Tire Shine</TaskHead>
-                        <TaskPara>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</TaskPara>
+                        
                     </Task>
                 </Row>
             </Rows>
@@ -60,6 +60,11 @@ const MotherDiv = styled.div`
 
     @media(max-width: 750px) {
         height: 30%;
+    }
+
+    @media(max-width: 475px) {
+        padding-bottom: 10%;
+        padding-top: 6%;
     }
 
 `
@@ -99,6 +104,11 @@ const Rows = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 100%;
+    
+    @media(max-width: 475px) {
+        justify-content: space-around;
+    }
 `
 
 const Row = styled.div`
@@ -107,6 +117,11 @@ const Row = styled.div`
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+
+    @media(max-width: 475px) {
+        // flex-direction: column;
+        height: 33%;
+    }
 `
 
 const Task = styled.div`
@@ -118,6 +133,10 @@ const Task = styled.div`
     text-align: center;
     padding-left: 10%;
     padding-right: 10%;
+
+    @media(max-width: 475px) {
+        padding: 0;
+    }
 `
 const TaskHead = styled.h3`
     font-size: 1.6rem;
