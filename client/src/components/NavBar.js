@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components"
-import BurgerMenu from "./BurgerMenu/BurgerMenu"
+import BurgerMenu from "./BurgerMenu/BurgerMenu";
+import { Link } from "react-router-dom";
 
 
 const NavBar = () => {
@@ -8,17 +9,28 @@ const NavBar = () => {
         <MotherDiv>
             <LeftDiv>
                 <LogoDiv>
-                     <Logo>Logo</Logo>
+                    <Link to="/">
+                        <Logo>Logo</Logo>
+                    </Link>
                 </LogoDiv>
             </LeftDiv>
 
             <RightDiv>
                 <NavLinks className="normalNav">
-                    <AboutLink className="link">About</AboutLink>
-                    <WorkLink className="link">Work</WorkLink>
-                    <ContactLink className="link">Contact</ContactLink>
+                    <Link to="/about">
+                        <AboutLink className="link">About</AboutLink>
+                    </Link>
+                    <Link to="packages">
+                        <AboutLink className="link">Packages</AboutLink>
+                    </Link>
+                    <Link to="work">
+                        <WorkLink className="link">Work</WorkLink>
+                    </Link>
+                    <Link to="contact">
+                        <ContactLink className="link">Contact</ContactLink>
+                    </Link>
                 </NavLinks>
-                <BurgerMenu className="burgerMenu"/>
+                <BurgerMenu className="burgerMenu" />
             </RightDiv>
         </MotherDiv>
     )

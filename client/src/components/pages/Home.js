@@ -3,7 +3,6 @@ import styled from "styled-components"
 import NavBar from "../NavBar"
 import Banner from "../Banner"
 import Testamonial from '../Testamonial';
-import Services from "../Services"
 import FAQ from "../FAQ"
 import Footer from "../Footer"
 
@@ -13,7 +12,6 @@ const Home = () => {
             <NavBar/>
             <Banner/>
             <Testamonial/>
-            <Services/>
             <FAQ/>
             <Footer/>
         </MotherDiv>
