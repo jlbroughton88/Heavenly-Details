@@ -26,6 +26,7 @@
     "concurrently": "^5.0.0",
     "express": "^4.17.1",
     "path": "^0.12.7",
+    "react-burger-menu": "^2.6.11",
     "react-router-dom": "^5.1.2",
     "styled-components": "^4.4.0"
   }
