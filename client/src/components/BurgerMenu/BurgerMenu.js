@@ -9,9 +9,10 @@ const BurgerMenu = () => {
         <MotherDiv>
             <Menu pageWrapId={"page-wrap"} className="hamburgerMenu" width={150} right>
                 <Link id="home" className="menu-item" to="/">Home</Link>
-                <Link id="work" className="menu-item" to="/work">About</Link>
-                <Link id="Contact" className="menu-item" to="/work">Work</Link>
-                <Link id="Contact" className="menu-item" to="/contact">Contact</Link>
+                <Link id="about" className="menu-item" to="/about">About</Link>
+                <Link id="packages" className="menu-item" to="/packages">Packages</Link>
+                <Link id="work" className="menu-item" to="/work">Work</Link>
+                <Link id="contact" className="menu-item" to="/contact">Contact</Link>
             </Menu>
         </MotherDiv>
     )

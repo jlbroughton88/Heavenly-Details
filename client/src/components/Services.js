@@ -6,41 +6,24 @@ const Services = () => {
         <MotherDiv>
             <HeadRow>
                 <HeadDiv>
-                    <Head>Services</Head>
+                    <Head>Packages</Head>
                 </HeadDiv>
             </HeadRow>
-            <Rows>
-                <Row>
-                    <Task>
-                        <TaskHead>Interior Wash</TaskHead>
-                        
-                    </Task>
-                    <Task>
-                        <TaskHead>Exterior Wash</TaskHead>
-                        
-                    </Task>
-                </Row>
-                <Row>
-                    <Task>
-                        <TaskHead>Wax</TaskHead>
-                        
-                    </Task>
-                    <Task>
-                        <TaskHead>Steam</TaskHead>
-                        
-                    </Task>
-                </Row>
-                <Row>
-                    <Task>
-                        <TaskHead>Clay Bar</TaskHead>
-                        
-                    </Task>
-                    <Task>
-                        <TaskHead>Tire Shine</TaskHead>
-                        
-                    </Task>
-                </Row>
-            </Rows>
+            <PackagesDiv>
+                <Package>
+                    <PackageHead>Basic</PackageHead>
+                </Package>
+                <Package>
+                    <PackageHead>Interior</PackageHead>
+                </Package>
+                <Package>
+                    <PackageHead>Ceramic</PackageHead>
+                </Package>
+                <Package>
+                    <PackageHead>Express Detail</PackageHead>
+                </Package>
+            </PackagesDiv>
+
         </MotherDiv>
     )
 }
@@ -48,7 +31,6 @@ const Services = () => {
 export default Services;
 
 const MotherDiv = styled.div`
-    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -116,66 +98,34 @@ const Head = styled.h3`
     }
 `
 
-const Rows = styled.div`
+
+// PACKAGES
+
+const PackagesDiv = styled.div`
     height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     width: 100%;
-    
-    @media(max-width: 475px) {
-        justify-content: space-around;
+    display: grid;
+    grid-template-rows: 215px;
+    grid-template-columns: 22.5% 22.5% 22.5% 22.5%;
+    grid-row-gap: 20px;
+    grid-column-gap: 2.5%;
+
+    @media(max-width: 600px) {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 215px 215px;
+    }
+
+    @media(max-width: 500px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 215px 215px 215px 215px;
     }
 `
 
-const Row = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-
-    @media(max-width: 475px) {
-        // flex-direction: column;
-        height: 33%;
-    }
+const Package = styled.div`
+    background: #02cccc;
+    max-width: 240px;
 `
 
-const Task = styled.div`
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+const PackageHead = styled.div`
 
-    @media(max-width: 475px) {
-        padding: 0;
-    }
-`
-const TaskHead = styled.h3`
-    font-size: 1.6rem;
-    margin: 0;
-
-    @media(max-width: 750px) {
-        font-size: 1.5rem
-    }
-
-    @media(max-width: 650px) {
-        font-size: 1.45rem;
-    }
-`
-const TaskPara = styled.p`
-    font-size: 1.2rem;
-    margin: 0;
-
-    @media(max-width: 750px) {
-        font-size: 1.15rem
-    }
-
-    @media(max-width: 650px) {
-        font-size: 1.1rem;
-    }
 `
