@@ -17,7 +17,7 @@ const FAQ = () => {
                         </HeadDiv>
                     </HeadRow>
                     <ParaDiv>
-                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
+                        <Para></Para>
                     </ParaDiv>
                 </Row>
                 <Row>
@@ -28,7 +28,7 @@ const FAQ = () => {
                     </HeadRow>
 
                     <ParaDiv>
-                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
+                        <Para></Para>
                     </ParaDiv>
                 </Row>
                 <Row>
@@ -39,7 +39,7 @@ const FAQ = () => {
                     </HeadRow>
 
                     <ParaDiv>
-                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
+                        <Para></Para>
                     </ParaDiv>
                 </Row>
                 <Row>
@@ -50,7 +50,7 @@ const FAQ = () => {
                     </HeadRow>
 
                     <ParaDiv>
-                        <Para>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet elit quis dolor</Para>
+                        <Para></Para>
                     </ParaDiv>
                 </Row>
             </Rows>
@@ -62,7 +62,7 @@ const FAQ = () => {
 export default FAQ;
 
 const MotherDiv = styled.div`
-    height: 50%;
+    height: 60%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -73,11 +73,10 @@ const MotherDiv = styled.div`
     padding-bottom: 2.5%;
 
     @media(max-width: 750px) {
-        height: 45%;
+        height: 70%;
     }
 
     @media(max-width: 650px) {
-        height: 40%;
     }
 
     @media(max-width: 475px) {
@@ -88,6 +87,7 @@ const MotherDiv = styled.div`
 
 // FAQ
 const FaqRow = styled.div`
+    height: 20%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -99,20 +99,36 @@ const FaqDiv = styled.div`
     align-items: center;
     justify-content: center;
     width: 33%;
+
+    @media(max-width: 500px) {
+        width: initial;
+        margin: 0;
+        left: 0;
+        padding: 3px 16px;
+        border: 1px solid #008C96;
+        border-left: none;
+        background: #f8f9fb;
+    }
 `
 
 const FaqHead = styled.h3`
     font-size: 3rem;
     margin: 0;
     border-bottom: 1px solid #008C96;
+
+    @media(max-width: 500px) {
+        border-bottom: none;
+        font-size: 2.6rem;
+    }
 `
 
 // ROWS
 const Rows = styled.div`
+    width: 100%;
     height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 `
 
 const Row = styled.div`
@@ -144,12 +160,23 @@ const HeadDiv = styled.div`
         justify-content: center;
         margin-left: 0;
     }
+
+    @media(max-width: 500px) {
+        justify-content: flex-start;
+        font-size: 1.4rem;
+        margin-left: 25px;
+    }
+
 `
 
 const Head = styled.h3`
     align-self: flex-start;
     font-size: 1.6rem
     margin: 0;
+
+    @media(max-width: 500px) {
+        font-size: 1.4rem;
+    }
 `
 
 const ParaDiv = styled.div`

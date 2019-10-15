@@ -12,6 +12,8 @@ html {
     height: 100%;
     display: table;
     font-family:"Museo Sans";
+    letter-spacing: 1px;
+    font-size: 1rem;
 }
 
 body {

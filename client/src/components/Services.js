@@ -48,7 +48,7 @@ const Services = () => {
 export default Services;
 
 const MotherDiv = styled.div`
-    height: 35%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -59,7 +59,7 @@ const MotherDiv = styled.div`
     padding-bottom: 2.5%;
 
     @media(max-width: 750px) {
-        height: 30%;
+        height: 45%;
     }
 
     @media(max-width: 475px) {
@@ -70,7 +70,7 @@ const MotherDiv = styled.div`
 `
 
 const HeadRow = styled.div`
-    height: 20%;
+    height: 30%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -84,6 +84,7 @@ const HeadDiv = styled.div`
     width: 33%;
     margin-left: 1.9%;
 
+
     @media(max-width: 950px) {
         margin-left: 5%;
     }
@@ -91,16 +92,32 @@ const HeadDiv = styled.div`
     @media(max-width: 600px) {
         margin-left: 8%;
     }
+
+    @media(max-width: 500px) {
+        width: initial;
+        margin: 0;
+        left: 0;
+        padding: 3px 16px;
+        border: 1px solid #008C96;
+        border-left: none;
+        background: #f8f9fb;
+    }
+
 `
 
 const Head = styled.h3`
     font-size: 3rem;
     margin: 0;
     border-bottom: 1px solid #008C96;
+
+    @media(max-width: 500px) {
+        font-size: 2.6rem;
+        border-bottom: none;
+    }
 `
 
 const Rows = styled.div`
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
