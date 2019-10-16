@@ -43,7 +43,7 @@ const MotherDiv = styled.nav`
     flex-direction: row;
     height: 7.5%;
     width: 100%;
-    background: lightgrey;
+    background: #f6f7f1;
     min-height: 55px;
 `
 const LeftDiv = styled.div`
@@ -76,9 +76,14 @@ const NavLinks = styled.div`
     justify-content: space-evenly;
     align-items: center;
 
-    @media(max-width: 500px) {
-        width: 75%;
+    @media(max-width: 850px) {
+        width: 60%;
     }
+
+    @media(max-width: 750px) {
+        width: 65%;
+    }
+
 `
 
 const AboutLink = styled.p`

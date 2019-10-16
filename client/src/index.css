@@ -30,14 +30,20 @@ a{
     src: url("./components/fonts/museoSans.ttf") format("TrueType");
   }
 
-@media(min-width: 501px) {
+@media(min-width: 651px) {
     .normalNav{ display: inline-block};
     .link{ display: inline-block };
     .hamburgerMenu{ display: none; };
 }
 
-@media(max-width: 500px) {
+@media(max-width: 650px) {
     .link{ display: none }
     .normalNav{ display: none; };
     .hamburgerMenu{ display: inline-block; }
 }
+
+/* PACKAGES */
+.p1{ background: #f6f7f1; }
+.p2{ background: #02cccc }
+.p3{ background: #7b49ec; color: #ffffff}
+.p4{ background: #2c2a6c; color: #ffffff}
