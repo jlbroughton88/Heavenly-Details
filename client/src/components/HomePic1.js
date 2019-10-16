@@ -58,6 +58,18 @@ const Container = styled.div`
     @media(max-width: 650px) {
         width: 450px;
     }
+
+    @media(max-width: 500px) {
+        width: 400px;
+    }
+
+    @media(max-width: 430px) {
+        width: 350px;
+    }
+
+    @media(max-width: 375px) {
+        width: 310px;
+    }
 `
 
 const HeadDiv = styled.div`

@@ -9,6 +9,11 @@ $animationSpeed: 40s;
 	0% { transform: translateX(0); }
 	100% { transform: translateX(calc(-400px * 3))}
 }
+@media(max-width: 600px) {
+	@keyframes scroll {
+		100% { transform: translateX(calc(-400px * 2))}
+	}
+}
 
 
 // Styling
@@ -29,6 +34,11 @@ $animationSpeed: 40s;
 		position: absolute;
 		width: 200px;
 		z-index: 2;
+
+		@media(max-width: 600px) {
+			height: 250px;
+			width: 100px;
+		}
 	}
 	
 	.slide-track {
@@ -43,5 +53,17 @@ $animationSpeed: 40s;
 		margin-right: 20px;
 		margin-top: 10px;
 		margin-left: 20px;
+	}
+
+	@media(max-width: 600px) {
+		.slide{
+			width: 240px;
+		}
+	}
+}
+
+@media(max-width: 600px) {
+	.slider{
+		height: 250px;
 	}
 }

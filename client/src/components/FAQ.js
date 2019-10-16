@@ -79,6 +79,10 @@ const MotherDiv = styled.div`
         width: 336px;
     }
 
+    @media(max-width: 375px) {
+        width: 310px;
+    }
+
 `
 
 // FAQ
