@@ -31,22 +31,17 @@ transporter.verify((err, success) => {
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-//   app.get("/*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "./client/build/index.html"))
-//   })
-// } else {
-//   app.use(express.static(path.join(__dirname, "/client/public")));
-//   app.get("/*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "./client/public/index.html"))
-//   })
-// }
-// app.use((req, res, next) => {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Headers", "Content-Type");
-//   next();
-// })
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+  })
+} else {
+  app.use(express.static(path.join(__dirname, "/client/public")));
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"))
+  })
+}
 
 app.post("/send", (req, res) => {
   let name = req.body.name;
@@ -73,6 +68,14 @@ app.post("/send", (req, res) => {
     }
   })
 });
+
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+})
+
 
 
 
