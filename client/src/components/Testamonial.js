@@ -6,9 +6,9 @@ const Testamonial = () => {
     return (
         <MotherDiv>
             <Container>
-                <HeadDiv>
+                {/* <HeadDiv>
                     <Head>"It looks brand new!"</Head>
-                </HeadDiv>
+                </HeadDiv> */}
             </Container>
         </MotherDiv>
     )
@@ -42,16 +42,17 @@ const MotherDiv = styled.div`
 
 const Container = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
-    width: 80%;
+    width: 50%;
+    padding-top: 7%;
     background: url(${Exterior}) no-repeat center/contain;
     color: black;
 
     @media(max-width: 650px) {
-        width: 100%;
-        transform: scale(1);
+        width: 85%;
+
     }
 `
 
@@ -63,7 +64,7 @@ const HeadDiv = styled.div`
 
 const Head = styled.h3`
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
 
     @media(max-width: 650px) {
         font-size: 1.7rem;
