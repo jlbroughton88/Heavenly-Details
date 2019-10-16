@@ -75,6 +75,10 @@ const MotherDiv = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media(max-width: 437px) {
+        width: 336px;
+    }
+
 `
 
 // FAQ
@@ -111,6 +115,10 @@ const HeadDiv = styled.div``
 
 const Head = styled.h3`
     margin: 0;
+
+    @media(max-width: 437px) {
+        font-size: 1.1rem;
+    }
 `
 
 const ParaDiv = styled.div``

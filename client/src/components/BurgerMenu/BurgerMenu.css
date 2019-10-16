@@ -4,6 +4,7 @@
 
 .hamburgerMenu{
     position: fixed;
+
   }
   
   
@@ -13,9 +14,13 @@
       height: 30px;
       margin-right: 5%;
       right: 60%;
-      outline: none;
+      outline: 0;
       border: none;
     }
+
+    .bm-burger-button:focus{}
+
+    .bm-burger-bars:hover{}
   
     @media(min-width: 651px) {
       .bm-burger-button{ display: none; }
