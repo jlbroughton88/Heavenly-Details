@@ -21,7 +21,7 @@ const transporter = nodemailer.createTransport({
 });
 
 transporter.verify((err, success) => {
-  if(err) {
+  if (err) {
     console.log(err)
   } else {
     console.log("Server is ready to take messages")
@@ -31,6 +31,18 @@ transporter.verify((err, success) => {
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+  })
+} else {
+  app.use(express.static(path.join(__dirname, "/client/public")));
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"))
+  })
+}
+
 
 app.post("/send", (req, res) => {
   let name = req.body.name;
@@ -39,17 +51,17 @@ app.post("/send", (req, res) => {
   let content = `name: ${name} \n email: ${email} \n message: ${message}`
 
   let mail = {
-    from : name,
+    from: name,
     to: "jlbroughton88@gmail.com",
-    subject: "Test from contact form", 
+    subject: "Test from contact form",
     text: content
   }
 
   transporter.sendMail(mail, (err, data) => {
-    if(err) {
+    if (err) {
       res.json({
         msg: "Message failed"
-      }) 
+      })
     } else {
       res.json({
         msg: "Message succeeded!"
@@ -62,18 +74,7 @@ app.post("/send", (req, res) => {
 
 
 
-if(process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-    app.get("/*", (req, res) => {
-      res.sendFile(path.join(__dirname, "./client/build/index.html"))
-    })
-  } else {
-    app.use(express.static(path.join(__dirname, "/client/public")));
-    app.get("/*", (req, res) => {
-      res.sendFile(path.join(__dirname, "./client/public/index.html"))
-    })
-  }
-  
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Content-Type");
@@ -82,5 +83,5 @@ app.use((req, res, next) => {
 
 
 app.listen(process.env.PORT || 5001, () => {
-    console.log("Server listening on port 5001")
+  console.log("Server listening on port 5001")
 }) 
