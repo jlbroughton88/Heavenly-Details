@@ -96,17 +96,10 @@ const LinksDiv = styled.div`
     justify-items: center;
 
     @media(max-width: 600px) {
-        margin-left: 14px;
-        width: 270px;
-        grid-gap: 5px;
-        grid-template-columns: 28% 28% 28%;
-        justify-items: end;
-    }
-
-    @media(max-width: 500px) {
         grid-template-columns: 45% 45%
         width: 150px;
-
+        justify-items: end;
+        grid-gap: 5px;
     }
     
 
