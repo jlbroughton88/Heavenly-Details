@@ -15,7 +15,7 @@ const FAQ = () => {
                 <Row>
                     <HeadRow>
                         <HeadDiv>
-                            <Head>How much do you charge?</Head>
+                            <Head>"How much do you charge?"</Head>
                         </HeadDiv>
                     </HeadRow>
                     <ParaDiv>
@@ -27,7 +27,7 @@ const FAQ = () => {
                 <Row>
                     <HeadRow>
                         <HeadDiv>
-                            <Head>Will my paint get damaged?</Head>
+                            <Head>"Will my paint get damaged?"</Head>
                         </HeadDiv>
                     </HeadRow>
 
@@ -40,7 +40,7 @@ const FAQ = () => {
                 <Row>
                     <HeadRow>
                         <HeadDiv>
-                            <Head>Why not use a drive-thru carwash?</Head>
+                            <Head>"Why not use a drive-thru carwash?"</Head>
                         </HeadDiv>
                     </HeadRow>
                     <ParaDiv>
@@ -52,7 +52,7 @@ const FAQ = () => {
                 <Row>
                     <HeadRow>
                         <HeadDiv>
-                            <Head>Will I have to drop my car off?</Head>
+                            <Head>"Will I have to drop my car off?"</Head>
                         </HeadDiv>
                     </HeadRow>
                     <ParaDiv>
@@ -68,7 +68,7 @@ const FAQ = () => {
 export default FAQ;
 
 const MotherDiv = styled.div`
-    max-width: 625px;
+    width: 436px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -79,16 +79,25 @@ const MotherDiv = styled.div`
 
 // FAQ
 const FaqRow = styled.div`
+width: 100%;
 display: flex;
 justify-content: flex-start;
+margin-bottom: 20px;
 `
 
-const FaqDiv = styled.div``
+const FaqDiv = styled.div`
+    border-bottom: black solid 1px;
+`
 
-const FaqHead = styled.h3``
+const FaqHead = styled.h3`
+    margin: 0;
+    font-size: 1.6rem;
+`
 
 // ROWS
-const Rows = styled.div``
+const Rows = styled.div`
+    width: 100%;
+`
 
 const Row = styled.div`
 `
@@ -100,7 +109,9 @@ justify-content: flex-start;
 
 const HeadDiv = styled.div``
 
-const Head = styled.h3``
+const Head = styled.h3`
+    margin: 0;
+`
 
 const ParaDiv = styled.div``
 
