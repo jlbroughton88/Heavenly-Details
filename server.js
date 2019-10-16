@@ -48,31 +48,31 @@ app.use((req, res, next) => {
   next();
 })
 
-app.post("/send", (req, res) => {
-  let name = req.body.name;
-  let email = req.body.email;
-  let message = req.body.message;
-  let content = `name: ${name} \n email: ${email} \n message: ${message}`
+// app.post("/send", (req, res) => {
+//   let name = req.body.name;
+//   let email = req.body.email;
+//   let message = req.body.message;
+//   let content = `name: ${name} \n email: ${email} \n message: ${message}`
 
-  let mail = {
-    from: name,
-    to: "jlbroughton88@gmail.com",
-    subject: "Test from contact form",
-    text: content
-  }
+//   let mail = {
+//     from: name,
+//     to: "jlbroughton88@gmail.com",
+//     subject: "Test from contact form",
+//     text: content
+//   }
 
-  transporter.sendMail(mail, (err, data) => {
-    if (err) {
-      res.json({
-        msg: "Message failed"
-      })
-    } else {
-      res.json({
-        msg: "Message succeeded!"
-      })
-    }
-  })
-});
+//   transporter.sendMail(mail, (err, data) => {
+//     if (err) {
+//       res.json({
+//         msg: "Message failed"
+//       })
+//     } else {
+//       res.json({
+//         msg: "Message succeeded!"
+//       })
+//     }
+//   })
+// });
 
 
 
