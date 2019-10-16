@@ -44,6 +44,7 @@ const MotherDiv = styled.nav`
     height: 7.5%;
     width: 100%;
     background: #f6f7f1;
+    width: 100%;
     min-height: 55px;
 `
 const LeftDiv = styled.div`

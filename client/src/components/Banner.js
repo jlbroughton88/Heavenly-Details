@@ -18,7 +18,6 @@ import styled from "styled-components";
 export default Banner;
 
 const MotherDiv = styled.div`
-    max-width: 625px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -70,7 +69,6 @@ const CallToActionDiv = styled.div`
     text-align: center;
     flex-direction: column;
     width: 60%;
-    min-width: 436px;
 `
 
 const CallToAction1 = styled.div`
