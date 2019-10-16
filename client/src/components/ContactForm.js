@@ -9,7 +9,7 @@ class ContactForm extends React.Component{
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
         const message = document.getElementById("message").value;
-        axios.post("http://localhost:5007/send", {
+        axios.post("http://localhost:5001/send", {
             name, 
             email,
             message
