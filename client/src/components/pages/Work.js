@@ -14,4 +14,9 @@ const Work = () => {
 
 export default Work;
 
-const MotherDiv = styled.div``
+const MotherDiv = styled.div`
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+`
