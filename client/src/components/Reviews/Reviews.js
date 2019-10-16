@@ -97,6 +97,15 @@ const MotherDiv = styled.div`
         height: 380px;
         width: 400px;
     }
+
+    @media(max-width: 430px) {
+        width: 350px;
+    }
+
+    @media(max-width: 375px) {
+        width: 310px;
+    }
+
 `
 
 const Container = styled.div`
@@ -108,7 +117,12 @@ const Head = styled.h3``
 const Body = styled.p`
 padding-left: 5px
 border-left: 2px #008C96 solid;
+
 @media(max-width: 630px) {
     font-size: 0.95rem;
+}
+
+@media(max-width: 500px) {
+    font-size: 0.9rem;
 }
 `
