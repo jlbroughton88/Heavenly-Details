@@ -1,17 +1,32 @@
 import React from 'react';
 import NavBar from "../NavBar";
 import Footer from "../Footer";
+import PackagesPrompt from "../PackagesPrompt";
+import PackagesList from '../PackagesList';
 import styled from "styled-components";
+
 
 const Packages = () => {
     return (
         <MotherDiv>
-            <NavBar/>
-            <Footer/>
+            <NavBar />
+            <Container>
+                <PackagesPrompt />
+                <PackagesList />
+            </Container>
         </MotherDiv>
     )
 }
 
 export default Packages;
 
-const MotherDiv = styled.div``
+const MotherDiv = styled.div`
+`
+
+const Container = styled.div`
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+flex-direction: column;
+`

@@ -9,7 +9,6 @@ const Testamonial = () => {
                 <HeadDiv>
                     <Head>"It looks brand new!"</Head>
                 </HeadDiv>
-                
             </Container>
         </MotherDiv>
     )
@@ -18,7 +17,8 @@ const Testamonial = () => {
 export default Testamonial;
 
 const MotherDiv = styled.div`
-    height: 30%;
+    height: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

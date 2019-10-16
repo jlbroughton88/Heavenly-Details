@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import styled from "styled-components";
 
  const Banner = () => {
@@ -6,7 +7,10 @@ import styled from "styled-components";
         <MotherDiv>
             <Heading>Heavenly Details</Heading>
             <Slogan>Catchy slogan here</Slogan>
-            <CallToAction>Get your free quote!</CallToAction>
+            <CallToActionDiv>
+                <Link to="/contact"><CallToAction1>Contact Us!</CallToAction1></Link>
+                <Link to="/packages"><CallToAction2>Detail Packages</CallToAction2></Link>
+            </CallToActionDiv>
         </MotherDiv>
     )
 }
@@ -14,37 +18,19 @@ import styled from "styled-components";
 export default Banner;
 
 const MotherDiv = styled.div`
-    height: 50%;
+    max-width: 625px;
+    height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     background: #ffffff;
-
-    @media(max-width: 750px) {
-        height: 45%;
-    }
-
-    @media(max-width: 650px) {
-        height: 40%;
-    }
-
-    @media(max-width: 475px) {
-        height: 35%;
-    }
-
-    @media(max-width: 375px) {
-        height: 30%;
-    }
 `
 
 const Heading = styled.h1`
+    font-size: 3rem;
     margin: 0;
-    font-size: 4rem;
-
-    @media(max-width: 650px) {
-        font-size: 3.5rem;
-    }
+    margin-bottom: 20px;
 
     @media(max-width: 475px) {
         font-size: 2.9rem;
@@ -61,11 +47,9 @@ const Heading = styled.h1`
 
 const Slogan = styled.h3`
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
 
-    @media(max-width: 650px) {
-        font-size: 1.6rem;
-    }
 
     @media(max-width: 475px) {
         font-size: 1.5rem;
@@ -80,29 +64,45 @@ const Slogan = styled.h3`
     }
 `
 
-const CallToAction = styled.div`
+const CallToActionDiv = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: column;
+    width: 60%;
+    min-width: 436px;
+`
+
+const CallToAction1 = styled.div`
     display: flex;
     justify-content: center;
     text-align: center
-    border: 1px black dotted;
+    border: 2px lightgrey solid;
     background: #008C96;
     color: #ffffff;
-    padding: 9px 12px;
-    font-size: 1.5rem;
-    border-radius: 3px;
+    padding: 7px 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 130px;
 
-    @media(max-width: 650px) {
-        padding: 8px 10px;
-        font-size: 1.2rem;
+    @media(max-width: 375px) {
+        font-size: 0.9rem;
     }
+`
 
-    @media(max-width: 475px) {
-        font-size: 1.1rem;
-    }
+const CallToAction2 = styled.div`
+    display: flex;
+    justify-content: center;
+    text-align: center
+    border: 2px lightgrey solid;
+    background: #ffffff;
+    color: #008C96;
+    padding: 7px 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 130px;
 
-    @media(max-width: 435px) {
-        font-size: 1rem;
-    } 
 
     @media(max-width: 375px) {
         font-size: 0.9rem;

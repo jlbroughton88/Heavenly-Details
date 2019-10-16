@@ -16,7 +16,8 @@ const Footer = () => {
 export default Footer;
 
 const MotherDiv = styled.footer`
-    height: 5%;
+    height: 60px;
+    width: 100%;
     background: #008C96;
     color: #ffffff;
     display: flex;
