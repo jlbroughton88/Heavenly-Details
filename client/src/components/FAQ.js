@@ -19,7 +19,7 @@ const FAQ = () => {
                         </HeadDiv>
                     </HeadRow>
                     <ParaDiv>
-                        <Para></Para>
+                        <Para>Our rates start at $35!</Para>
                     </ParaDiv>
                 </Row>
 
@@ -32,7 +32,7 @@ const FAQ = () => {
                     </HeadRow>
 
                     <ParaDiv>
-                        <Para></Para>
+                        <Para>Not at all! We use proven techniques to avoid any paint damage.</Para>
                     </ParaDiv>
                 </Row>
 
@@ -44,7 +44,7 @@ const FAQ = () => {
                         </HeadDiv>
                     </HeadRow>
                     <ParaDiv>
-                        <Para></Para>
+                        <Para>Drive-thru car washes actually damage your paint, leaving micro-scratches from the large bristled brushes.</Para>
                     </ParaDiv>
                 </Row>
 
@@ -56,7 +56,7 @@ const FAQ = () => {
                         </HeadDiv>
                     </HeadRow>
                     <ParaDiv>
-                        <Para></Para>
+                        <Para>Nope, we'll come to you!</Para>
                     </ParaDiv>
                 </Row>
             </Rows>
@@ -69,7 +69,7 @@ export default FAQ;
 
 const MotherDiv = styled.div`
     width: 436px;
-    height: 400px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -90,7 +90,7 @@ margin-bottom: 20px;
 `
 
 const FaqDiv = styled.div`
-    border-bottom: black solid 1px;
+border-bottom: #008C96 solid 2px;
 `
 
 const FaqHead = styled.h3`
@@ -104,6 +104,7 @@ const Rows = styled.div`
 `
 
 const Row = styled.div`
+    margin-bottom: 25px;
 `
 
 const HeadRow = styled.div`
@@ -111,7 +112,9 @@ display: flex;
 justify-content: flex-start;
 `
 
-const HeadDiv = styled.div``
+const HeadDiv = styled.div`
+    margin-bottom: 5px;
+`
 
 const Head = styled.h3`
     margin: 0;
@@ -121,8 +124,14 @@ const Head = styled.h3`
     }
 `
 
-const ParaDiv = styled.div``
+const ParaDiv = styled.div`
+    padding-left: 20px;
+`
 
-const Para = styled.p``
+const Para = styled.p`
+border-left: #008C96 solid 2px;
+padding-left: 5px;
+margin: 0;
+`
 
 

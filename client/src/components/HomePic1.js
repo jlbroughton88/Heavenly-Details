@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 import Exterior from "./images/photos/exterior.jpeg"
 
-const Testamonial = () => {
+const HomePic1 = () => {
     return (
         <MotherDiv>
             <Container>
@@ -14,7 +14,7 @@ const Testamonial = () => {
     )
 }
 
-export default Testamonial;
+export default HomePic1;
 
 const MotherDiv = styled.div`
     height: 400px;
@@ -23,7 +23,8 @@ const MotherDiv = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: #f8f9fb;
+    // background: #f8f9fb;
+    background: #f6f7f1;
     max-height: 350px;
 
     @media(max-width: 475px) {
@@ -45,14 +46,17 @@ const Container = styled.div`
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    width: 50%;
+    width: 550px;
     padding-top: 7%;
     background: url(${Exterior}) no-repeat center/contain;
     color: black;
 
-    @media(max-width: 650px) {
-        width: 85%;
+    @media(max-width:850px) {
+        width: 500px
+    }
 
+    @media(max-width: 650px) {
+        width: 450px;
     }
 `
 
@@ -62,19 +66,19 @@ const HeadDiv = styled.div`
     border-radius: 3px;
 `
 
-const Head = styled.h3`
-    margin: 0;
-    font-size: 1.6rem;
+// const Head = styled.h3`
+//     margin: 0;
+//     font-size: 1.6rem;
 
-    @media(max-width: 650px) {
-        font-size: 1.7rem;
-    }
+//     @media(max-width: 650px) {
+//         font-size: 1.7rem;
+//     }
 
-    @media(max-width: 475px) {
-        font-size: 1.5rem;
-    }
+//     @media(max-width: 475px) {
+//         font-size: 1.5rem;
+//     }
 
-    @media(max-width: 375px) {
-        font-size: 1.3rem;
-    }
-`
+//     @media(max-width: 375px) {
+//         font-size: 1.3rem;
+//     }
+// `
