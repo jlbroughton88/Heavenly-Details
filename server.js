@@ -42,7 +42,11 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.join(__dirname, "./client/public/index.html"))
   })
 }
-
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+})
 
 app.post("/send", (req, res) => {
   let name = req.body.name;
@@ -75,11 +79,7 @@ app.post("/send", (req, res) => {
 
 
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  next();
-})
+
 
 
 app.listen(process.env.PORT || 5001, () => {
