@@ -1,22 +1,22 @@
 import React from 'react';
 import styled from "styled-components";
-import alfaCockpit from "./images/photos/alfaCockpit.jpg"
-import alfaFront from "./images/photos/alfaFront.jpg"
-import alfaInterior from "./images/photos/alfaInterior.jpg"
-import alfaSide from "./images/photos/alfaSide.jpg"
-import alfaWheel from "./images/photos/alfaWheel.jpg"
-import bentley from "./images/photos/bentley.jpg"
-import jagInterior from "./images/photos/jagInterior.jpg"
-import jagSide from "./images/photos/jagSide.jpg"
-import jagWheel from "./images/photos/jagWheel.jpg"
-import lexusAfter from "./images/photos/lexusAfter.jpg"
-import lexusBefore from "./images/photos/lexusBefore.jpg"
-import lexusSedanInterior from "./images/photos/lexusSedanInterior.jpg"
-import lexusSuvInterior from "./images/photos/lexusSuvInterior.jpg"
-import lexusSuvSide from "./images/photos/lexusSuvSide.jpg"
-import lexusSuvSide2 from "./images/photos/lexusSuvSide2.jpg"
-import triumphFront from "./images/photos/triumphFront.jpg"
-import triumphSide from "./images/photos/triumphSide.jpg"
+import alfaCockpit from "./images/photos/alfaCockpit.jpg";
+import alfaFront from "./images/photos/alfaFront.jpg";
+import alfaInterior from "./images/photos/alfaInterior.jpg";
+import alfaSide from "./images/photos/alfaSide.jpg";
+import alfaWheel from "./images/photos/alfaWheel.jpg";
+import bentley from "./images/photos/bentley.jpg";
+import jagInterior from "./images/photos/jagInterior.jpg";
+import jagSide from "./images/photos/jagSide.jpg";
+import jagWheel from "./images/photos/jagWheel.jpg";
+import lexusAfter from "./images/photos/lexusAfter.jpg";
+import lexusBefore from "./images/photos/lexusBefore.jpg";
+import lexusSedanInterior from "./images/photos/lexusSedanInterior.jpg";
+import lexusSuvInterior from "./images/photos/lexusSuvInterior.jpg";
+import lexusSuvSide from "./images/photos/lexusSuvSide.jpg";
+import lexusSuvSide2 from "./images/photos/lexusSuvSide2.jpg";
+import triumphFront from "./images/photos/triumphFront.jpg";
+import triumphSide from "./images/photos/triumphSide.jpg";
 
 const WorkPhotos = () => {
 
@@ -31,7 +31,7 @@ const WorkPhotos = () => {
         <MotherDiv>
             <Container>
                 {pictureArr.map(pic =>
-                    <PhotoBlock alt="yeet" src={`${pic}`}></PhotoBlock>
+                    <PhotoBlock key={pic} alt="yeet" src={`${pic}`}></PhotoBlock>
                 )}
             </Container>
         </MotherDiv>
@@ -47,9 +47,6 @@ const MotherDiv = styled.div`
     justify-content: center;
     align-items: center;
     background: #f6f7f1;
-
-
-
 `
 
 const Container = styled.div`
@@ -66,6 +63,10 @@ const Container = styled.div`
         width: 500px
         grid-template-columns: 60%;
     }
+    
+    @media(max-width: 450px) {
+        width: 300px
+    }
 `
 
 const PhotoBlock = styled.img`
@@ -76,5 +77,9 @@ const PhotoBlock = styled.img`
 
     @media(max-width: 725px) {
         width: 400px
+    }
+
+    @media(max-width: 450px) {
+        width: 300px
     }
 `

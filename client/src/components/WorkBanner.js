@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 
-const WorkPrompt = () => {
+const WorkBanner = () => {
     return (
         <MotherDiv>
             <Head>Our Work</Head>
@@ -10,7 +10,7 @@ const WorkPrompt = () => {
     )
 }
 
-export default WorkPrompt;
+export default WorkBanner;
 
 const MotherDiv = styled.div`
     display: flex;

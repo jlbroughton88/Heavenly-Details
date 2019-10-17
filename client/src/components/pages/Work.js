@@ -3,13 +3,13 @@ import NavBar from "../NavBar";
 import Footer from "../Footer";
 import styled from "styled-components";
 import WorkPhotos from '../WorkPhotos';
-import WorkPrompt from "../WorkPrompt"
+import WorkBanner from "../WorkBanner"
 
 const Work = () => {
     return (
         <MotherDiv>
             <NavBar/>
-            <WorkPrompt/>
+            <WorkBanner/>
             <WorkPhotos/>
             <Footer/>
         </MotherDiv>

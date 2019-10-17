@@ -37,8 +37,14 @@ const Container = styled.div`
 `
 
 const PictureDiv = styled.div`
-    width: 550px
+    width: 500px;
     margin-bottom: 30px;
+
+    @media(max-width: 799px) { width: 400px; }
+    @media(max-width: 540px) { width: 350px; }
+    @media(max-width: 450px) { width: 300px; }
+    @media(max-width: 380px) { width: 275px; }
+    
 `
 
 const Picture = styled.img`
@@ -48,6 +54,8 @@ const Picture = styled.img`
 
 const TextDiv = styled.div`
     width: 60%;
+
+    @media(max-width: 625px) { width: 70% }
 `
 
 const Text = styled.p``
