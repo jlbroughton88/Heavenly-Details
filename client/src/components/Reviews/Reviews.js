@@ -7,7 +7,7 @@ const Reviews = () => {
     return (
         <MotherDiv>
             <Container>
-                <Link to="/reviews">
+                <Link className="viewAllLink" to="/reviews">
                     <ViewAllBtn>View All</ViewAllBtn>
                 </Link>
                 <div className="slider">

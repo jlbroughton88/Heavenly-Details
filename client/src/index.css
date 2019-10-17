@@ -23,6 +23,11 @@ body {
 a{
     text-decoration: none;
     color: inherit;
+    margin: 0;
+}
+
+.viewAllLink{
+    width: 70px;
 }
 
 @font-face {
