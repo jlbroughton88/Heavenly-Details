@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from "../NavBar";
+import AboutBanner from "../AboutBanner";
 import Footer from "../Footer";
 import styled from "styled-components";
 
@@ -7,6 +8,7 @@ const About = () => {
     return (
         <MotherDiv>
             <NavBar/>
+            <AboutBanner/>
             <Footer/>
         </MotherDiv>
     )

@@ -86,6 +86,7 @@ const MotherDiv = styled.div`
     align-items: center;
     height: 400px;
     width: 600px;
+    
 
     @media(max-width: 630px) {
         height: 380px;
@@ -113,9 +114,8 @@ const MotherDiv = styled.div`
 `
 
 const Container = styled.div`
-width: 100%;
+    width: 100%;
 `
-
 const ViewAllBtn = styled.div`
     border: 1px solid lightgrey;
     display: flex;
