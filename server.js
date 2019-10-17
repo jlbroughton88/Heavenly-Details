@@ -3,7 +3,8 @@ const app = express();
 const path = require("path");
 
 
-
+// FIGURE OUT WHY IT WONT WORK WITH THE 
+  // NODEMAILER CODE
 
 
 

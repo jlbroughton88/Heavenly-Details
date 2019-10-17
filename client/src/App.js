@@ -6,6 +6,7 @@ import About from "./components/pages/About";
 import Work from "./components/pages/Work";
 import Packages from "./components/pages/Packages";
 import Contact from "./components/pages/Contact";
+import Reviews from "./components/pages/Reviews"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/work" component={Work} />
           <Route exact path="/packages" component={Packages} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path ="/reviews" component={Reviews} />
         </Switch>
         {/* <Footer/> */}
       </div>

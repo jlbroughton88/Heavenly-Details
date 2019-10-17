@@ -1,11 +1,15 @@
 import React from 'react'
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import "./Reviews.scss"
 
 const Reviews = () => {
     return (
         <MotherDiv>
             <Container>
+                <Link to="/reviews">
+                    <ViewAllBtn>View All</ViewAllBtn>
+                </Link>
                 <div className="slider">
                     <div className="slide-track">
                         <div className="slide">
@@ -110,6 +114,21 @@ const MotherDiv = styled.div`
 
 const Container = styled.div`
 width: 100%;
+`
+
+const ViewAllBtn = styled.div`
+    border: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 70px;
+    border-radius: 3px;
+
+    :hover{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+        border: 1px solid grey;
+    }
 `
 
 const Head = styled.h3``
