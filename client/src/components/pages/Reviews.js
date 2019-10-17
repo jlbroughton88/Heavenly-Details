@@ -86,6 +86,7 @@ const Reviews = () => {
 export default Reviews;
 
 const MotherDiv = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -100,7 +101,7 @@ const Prompt = styled.div`
     align-items: flex-start;
     align-self: center;
 
-        @media(max-width: 850px) {
+    @media(max-width: 850px) {
         width: 70%;
     }
 `
@@ -122,7 +123,7 @@ const ReviewsDiv = styled.div`
     align-items: center;
 
     @media(max-width: 850px) {
-       align-items: center;
+        width:100%
     }
 `
 
@@ -141,6 +142,9 @@ const ReviewDiv = styled.div`
 
     @media(max-width: 850px) {
         width: 70%;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 `
 
