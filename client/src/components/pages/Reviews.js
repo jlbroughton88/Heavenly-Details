@@ -98,6 +98,11 @@ const Prompt = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    align-self: center;
+
+        @media(max-width: 850px) {
+        width: 70%;
+    }
 `
 
 const PromptHead = styled.h2`
@@ -111,13 +116,28 @@ const PromptBody = styled.p`
 
 const ReviewsDiv = styled.div`
     margin-bottom: 50px;
+    display: flex: 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media(max-width: 850px) {
+       align-items: center;
+    }
 `
 
 const ReviewDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 660px;
-    margin: 30px;
-    padding: 2.5%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 30px;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    align-self: center;
+
 
     @media(max-width: 850px) {
         width: 70%;
@@ -126,11 +146,14 @@ const ReviewDiv = styled.div`
 
 
 const Name = styled.h3`
+    margin: 0;
     border-bottom: 2px #008C96 solid;
     width: 110px;
     padding-bottom: 5px;
+    margin-bottom: 20px;
 `
 
 const Body = styled.p`
+margin: 0;
 
 `
