@@ -5,11 +5,7 @@ import Interior from "./images/photos/interior.jpg"
 const HomePic2 = () => {
     return (
         <MotherDiv>
-            <Container>
-                {/* <HeadDiv>
-                    <Head>"It looks brand new!"</Head>
-                </HeadDiv> */}
-            </Container>
+            <Container></Container>
         </MotherDiv>
     )
 }

@@ -5,11 +5,7 @@ import Exterior from "./images/photos/exterior.jpeg"
 const HomePic1 = () => {
     return (
         <MotherDiv>
-            <Container>
-                {/* <HeadDiv>
-                    <Head>"It looks brand new!"</Head>
-                </HeadDiv> */}
-            </Container>
+            <Container></Container>
         </MotherDiv>
     )
 }
@@ -49,7 +45,6 @@ const Container = styled.div`
     width: 550px;
     padding-top: 7%;
     background: url(${Exterior}) no-repeat center/contain;
-    color: black;
 
     @media(max-width:850px) {
         width: 500px
@@ -71,26 +66,3 @@ const Container = styled.div`
         width: 310px;
     }
 `
-
-const HeadDiv = styled.div`
-    padding: 3px 5px;
-    background: white;
-    border-radius: 3px;
-`
-
-// const Head = styled.h3`
-//     margin: 0;
-//     font-size: 1.6rem;
-
-//     @media(max-width: 650px) {
-//         font-size: 1.7rem;
-//     }
-
-//     @media(max-width: 475px) {
-//         font-size: 1.5rem;
-//     }
-
-//     @media(max-width: 375px) {
-//         font-size: 1.3rem;
-//     }
-// `
