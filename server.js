@@ -1,35 +1,9 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-// Nodemailer stuff
-const nodemailer = require("nodemailer");
-const creds = require("./.env");
-const cors = require("cors");
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.ethereal.email",
-  port: 587,
-  secure: false,
-  auth: {
-    user: creds.USER,
-    pass: creds.PASS
-  },
-  tls: {
-    rejectUnauthorized: false
-  }
-});
 
-transporter.verify((err, success) => {
-  if(err) {
-    console.log(err)
-  } else {
-    console.log("Server is ready to take messages")
-  }
-})
 
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 
 
