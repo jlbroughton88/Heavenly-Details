@@ -14,6 +14,7 @@ const Packages = () => {
                 <PackagesPrompt />
                 <PackagesList />
             </Container>
+            <Footer/>
         </MotherDiv>
     )
 }
@@ -24,9 +25,10 @@ const MotherDiv = styled.div`
 `
 
 const Container = styled.div`
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-text-align: center;
-flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 100px;
 `
