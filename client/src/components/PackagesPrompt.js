@@ -36,4 +36,5 @@ const Head = styled.h2`
 const Para = styled.p`
     font-size: 1.2rem;
     margin: 0;
+    text-align: start;
 `

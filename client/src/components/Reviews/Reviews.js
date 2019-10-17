@@ -7,9 +7,14 @@ const Reviews = () => {
     return (
         <MotherDiv>
             <Container>
-                <Link className="viewAllLink" to="/reviews">
+                <HeaderDiv>
+                    <Header>Our Reviews</Header>                
+                    <Link className="viewAllLink" to="/reviews">
                     <ViewAllBtn>View All</ViewAllBtn>
                 </Link>
+                </HeaderDiv>
+                
+
                 <div className="slider">
                     <div className="slide-track">
                         <div className="slide">
@@ -84,22 +89,22 @@ export default Reviews;
 const MotherDiv = styled.div`
     display: flex;
     align-items: center;
-    height: 400px;
+    height: 450px;
     width: 600px;
     
 
     @media(max-width: 630px) {
-        height: 380px;
+        // height: 380px;
         width: 500px
     }
 
     @media(max-width: 530px) {
-        height: 380px;
+        // height: 380px;
         width: 460px
     }
 
     @media(max-width: 500px) {
-        height: 380px;
+        // height: 380px;
         width: 400px;
     }
 
@@ -114,8 +119,38 @@ const MotherDiv = styled.div`
 `
 
 const Container = styled.div`
+
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `
+
+const HeaderDiv = styled.div`
+    width: 436px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    @media(max-width: 437px) {
+        width: 336px;
+    }
+
+    @media(max-width: 375px) {
+        width: 310px;
+    }
+`
+
+const Header =  styled.h2`
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    border-bottom: #008C96 solid 2px;
+`
+
 const ViewAllBtn = styled.div`
     border: 1px solid lightgrey;
     display: flex;
