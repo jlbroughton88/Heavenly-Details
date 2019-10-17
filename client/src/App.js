@@ -7,11 +7,13 @@ import Work from "./components/pages/Work";
 import Packages from "./components/pages/Packages";
 import Contact from "./components/pages/Contact";
 import Reviews from "./components/pages/Reviews"
+import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <ScrollToTop>
+              <div className="App">
 
         <Switch>
           <Route exact path="/" component={Home} />
@@ -23,6 +25,8 @@ function App() {
         </Switch>
         {/* <Footer/> */}
       </div>
+      </ScrollToTop>
+
     </Router>
 
   );
