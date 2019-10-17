@@ -43,6 +43,12 @@ if (process.env.NODE_ENV === "production") {
   })
 }
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+})
+
 // app.post("/send", (req, res) => {
 //   let name = req.body.name;
 //   let email = req.body.email;
@@ -70,11 +76,6 @@ if (process.env.NODE_ENV === "production") {
 // });
 
 
-// app.use((req, res, next) => {
-//   res.header("Access-Control-Allow-Origin", "*");
-//   res.header("Access-Control-Allow-Headers", "Content-Type");
-//   next();
-// })
 
 
 
