@@ -1,24 +1,42 @@
 {
   "files": {
-    "main.css": "/static/css/main.163cd1a6.chunk.css",
-    "main.js": "/static/js/main.10e4e1e3.chunk.js",
-    "main.js.map": "/static/js/main.10e4e1e3.chunk.js.map",
+    "main.css": "/static/css/main.9a5dcd5d.chunk.css",
+    "main.js": "/static/js/main.c13c4872.chunk.js",
+    "main.js.map": "/static/js/main.c13c4872.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.985e6003.js",
     "runtime-main.js.map": "/static/js/runtime-main.985e6003.js.map",
-    "static/js/2.273ab312.chunk.js": "/static/js/2.273ab312.chunk.js",
-    "static/js/2.273ab312.chunk.js.map": "/static/js/2.273ab312.chunk.js.map",
+    "static/js/2.9bdd9ded.chunk.js": "/static/js/2.9bdd9ded.chunk.js",
+    "static/js/2.9bdd9ded.chunk.js.map": "/static/js/2.9bdd9ded.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.73641256014a95834eadeda6b4b241d3.js": "/precache-manifest.73641256014a95834eadeda6b4b241d3.js",
+    "precache-manifest.6a8b5118cccfed3bf62382765cbd7f92.js": "/precache-manifest.6a8b5118cccfed3bf62382765cbd7f92.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.163cd1a6.chunk.css.map": "/static/css/main.163cd1a6.chunk.css.map",
+    "static/css/main.9a5dcd5d.chunk.css.map": "/static/css/main.9a5dcd5d.chunk.css.map",
+    "static/media/alfaCockpit.jpg": "/static/media/alfaCockpit.1f10a285.jpg",
+    "static/media/alfaFront.jpg": "/static/media/alfaFront.b9f19072.jpg",
+    "static/media/alfaInterior.jpg": "/static/media/alfaInterior.20f099b8.jpg",
+    "static/media/alfaSide.jpg": "/static/media/alfaSide.09c8381e.jpg",
+    "static/media/alfaWheel.jpg": "/static/media/alfaWheel.e97cbe33.jpg",
+    "static/media/bentley.jpg": "/static/media/bentley.67c97796.jpg",
     "static/media/exterior.jpeg": "/static/media/exterior.3fde097f.jpeg",
     "static/media/interior.jpg": "/static/media/interior.92de2272.jpg",
-    "static/media/index.css": "/static/media/museoSans.5b9453f7.ttf"
+    "static/media/jagInterior.jpg": "/static/media/jagInterior.79002076.jpg",
+    "static/media/jagSide.jpg": "/static/media/jagSide.ac7a82a7.jpg",
+    "static/media/jagWheel.jpg": "/static/media/jagWheel.2e03bfcd.jpg",
+    "static/media/lexusAfter.jpg": "/static/media/lexusAfter.59baaf37.jpg",
+    "static/media/lexusBefore.jpg": "/static/media/lexusBefore.47606d9f.jpg",
+    "static/media/lexusSedanInterior.jpg": "/static/media/lexusSedanInterior.9be10f57.jpg",
+    "static/media/lexusSuvInterior.jpg": "/static/media/lexusSuvInterior.eede8d5a.jpg",
+    "static/media/lexusSuvSide.jpg": "/static/media/lexusSuvSide.8a7f2200.jpg",
+    "static/media/lexusSuvSide2.jpg": "/static/media/lexusSuvSide2.ccc20879.jpg",
+    "static/media/index.css": "/static/media/museoSans.5b9453f7.ttf",
+    "static/media/steam.jpg": "/static/media/steam.8a5d92f3.jpg",
+    "static/media/triumphFront.jpg": "/static/media/triumphFront.29317cc5.jpg",
+    "static/media/triumphSide.jpg": "/static/media/triumphSide.47f357f8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.985e6003.js",
-    "static/js/2.273ab312.chunk.js",
-    "static/css/main.163cd1a6.chunk.css",
-    "static/js/main.10e4e1e3.chunk.js"
+    "static/js/2.9bdd9ded.chunk.js",
+    "static/css/main.9a5dcd5d.chunk.css",
+    "static/js/main.c13c4872.chunk.js"
   ]
 }

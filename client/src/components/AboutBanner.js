@@ -5,7 +5,7 @@ const ContactBanner = () => {
     return (
         <MotherDiv>
             <Heading>About Us</Heading>
-            <Para></Para>
+            <Para>Everything that you might want to know about Heavenly Details!</Para>
         </MotherDiv>
     )
 }

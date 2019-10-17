@@ -91,7 +91,7 @@ const MoverDiv2 = styled.div`
 
 const LinksDiv = styled.div`
     display: inline-grid;
-    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-template-columns: 30% 30% 30%
     grid-gap: 20px;
     justify-content: space-evenly;
     align-items: center;
