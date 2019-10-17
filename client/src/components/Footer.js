@@ -58,6 +58,7 @@ const MotherDiv = styled.footer`
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    bottom: 0;
 `
 
 const MoverDiv1 = styled.div`

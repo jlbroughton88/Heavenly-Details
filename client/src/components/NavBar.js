@@ -46,6 +46,8 @@ const MotherDiv = styled.nav`
     background: #f6f7f1;
     width: 100%;
     min-height: 55px;
+    top: 0;
+    position: sticky;
 `
 const LeftDiv = styled.div`
     width: 25%;
