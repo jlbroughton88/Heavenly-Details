@@ -45,6 +45,7 @@
     .bm-cross {
       background-color: #feda6a;
       width: 25px;
+      position: fixed;
     }
      
     /*
@@ -53,10 +54,12 @@
     */
     .bm-menu-wrap {
       position: fixed;
-      height: 90%;
+      height: 100%;
+      top: 0 !important;
+      
     }
     @media(min-width: 651px) {
-      .bm-menu-wrap{ display: none; }
+      .bm-menu-wrap{ display: none;}
   }
      
     /* General sidebar styles */
@@ -64,15 +67,18 @@
       background: #373a47;
       padding: 20px 20px;
       font-size: 1.15em;
-      margin-top: -10%;
-      margin-right: -1%;
-      height: 35% !important;
+      /* margin-top: -1%; */
+      /* margin-right: -1%; */
+      height: 255px !important;
+      position: fixed;
+      /* top: 0; */
+      /* right: 0; */
+      overflow: hidden;
       display: flex;
       justify-content: flex-end;
       border-left: #d4d4dc solid 1px;
       border-bottom: #d4d4dc solid 1px;
       overflow: hidden;
-      z-index: 2;
       border-bottom-left-radius: 5px
     }
      
@@ -80,7 +86,7 @@
     /* Wrapper for item list */
     .bm-item-list {
       color: #b8b7ad;
-      padding: 0.8em;
+      width: 110px
     }
      
     /* Individual item */
@@ -94,7 +100,11 @@
     /* Styling of overlay */
     .bm-overlay {
       background: rgba(0, 0, 0, 0.2);
-      margin-left: 31%;
+      margin-left: -31%;
+      height: 271px !important;
+      width: 180px !important;
+      top: 0 !important;
+
   
     }
     @media(min-width: 651px) {
