@@ -13,8 +13,6 @@ const Reviews = () => {
                     <ViewAllBtn>View All</ViewAllBtn>
                 </Link>
                 </HeaderDiv>
-                
-
                 <div className="slider">
                     <div className="slide-track">
                         <div className="slide">
