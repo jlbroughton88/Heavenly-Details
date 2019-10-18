@@ -1,8 +1,8 @@
 import React from 'react';
 import NavBar from "../NavBar";
 import Footer from "../Footer";
-import ContactBanner from "../ContactBanner";
-import ContactForm from "../ContactForm"
+import ContactBanner from "../Contact/ContactBanner";
+import ContactForm from "../Contact/ContactForm"
 import styled from "styled-components";
 
 const Contact = () => {

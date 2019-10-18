@@ -2,8 +2,8 @@ import React from 'react';
 import NavBar from "../NavBar";
 import Footer from "../Footer";
 import styled from "styled-components";
-import WorkPhotos from '../WorkPhotos';
-import WorkBanner from "../WorkBanner"
+import WorkPhotos from '../Work/WorkPhotos';
+import WorkBanner from "../Work/WorkBanner"
 
 const Work = () => {
     return (

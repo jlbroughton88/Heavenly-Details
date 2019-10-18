@@ -83,6 +83,15 @@ const CallToAction1 = styled.div`
     border-radius: 4px;
     margin-bottom: 20px;
     width: 130px;
+    transition: all .15s ease-out;
+
+    :focus{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
+
+    :hover{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
 
     @media(max-width: 375px) {
         font-size: 0.9rem;
@@ -100,6 +109,15 @@ const CallToAction2 = styled.div`
     font-size: 1rem;
     border-radius: 4px;
     width: 130px;
+    transition: all .15s ease-out;
+
+    :focus{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
+
+    :hover{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
 
 
     @media(max-width: 375px) {

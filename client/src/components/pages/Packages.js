@@ -1,8 +1,8 @@
 import React from 'react';
 import NavBar from "../NavBar";
 import Footer from "../Footer";
-import PackagesPrompt from "../PackagesPrompt";
-import PackagesList from '../PackagesList';
+import PackagesPrompt from "../Packages/PackagesPrompt";
+import PackagesList from '../Packages/PackagesList';
 import styled from "styled-components";
 
 

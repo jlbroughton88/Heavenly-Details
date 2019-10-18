@@ -98,6 +98,8 @@ const LinksDiv = styled.div`
     align-self: center;
     width: 400px;
     justify-items: center;
+    height: 60px;
+    position: relative;
 
     @media(max-width: 600px) {
         grid-template-columns: 45% 45%
@@ -111,6 +113,21 @@ const LinksDiv = styled.div`
 
 const FooterLink = styled.p`
     margin: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: all .15s ease-out;
+
+
+
+    :focus{
+        border-left: 2px #ffffff solid;
+        border-right: 2px #ffffff solid;
+    }
+
+    :hover{
+        border-left: 2px #ffffff solid;
+        border-right: 2px #ffffff solid;
+    }
 `
 
 const SocialDiv = styled.div`

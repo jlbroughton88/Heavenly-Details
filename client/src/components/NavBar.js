@@ -18,16 +18,16 @@ const NavBar = () => {
             <RightDiv>
                 <NavLinks className="normalNav">
                     <Link to="/about">
-                        <AboutLink className="link">About</AboutLink>
+                        <LinkP className="link">About</LinkP>
                     </Link>
                     <Link to="packages">
-                        <AboutLink className="link">Packages</AboutLink>
+                        <LinkP className="link">Packages</LinkP>
                     </Link>
                     <Link to="work">
-                        <WorkLink className="link">Work</WorkLink>
+                        <LinkP className="link">Work</LinkP>
                     </Link>
                     <Link to="contact">
-                        <ContactLink className="link">Contact</ContactLink>
+                        <LinkP className="link">Contact</LinkP>
                     </Link>
                 </NavLinks>
                 <BurgerMenu className="burgerMenu" />
@@ -65,6 +65,19 @@ const LogoDiv = styled.div`
 const Logo = styled.p`
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: all .15s ease-out;
+
+    :focus{
+        border-bottom: 2px #008C96 solid;
+        border-top: 2px #008C96 solid;
+    }
+
+    :hover{
+        border-bottom: 2px #008C96 solid;
+        border-top: 2px #008C96 solid;
+    }
 `
 const RightDiv = styled.div`
     width: 75%;
@@ -89,18 +102,21 @@ const NavLinks = styled.div`
 
 `
 
-const AboutLink = styled.p`
+const LinkP = styled.p`
     margin: 3%;
     margin-top: 0;
     margin-bottom: 0;
-`
-const WorkLink = styled.p`
-    margin: 3%;
-    margin-top: 0;
-    margin-bottom: 0;
-`
-const ContactLink = styled.p`
-    margin: 3%;
-    margin-top: 0;
-    margin-bottom: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: all .15s ease-out;
+
+    :focus{
+        border-bottom: 2px #008C96 solid;
+        border-top: 2px #008C96 solid;
+    }
+
+    :hover{
+        border-bottom: 2px #008C96 solid;
+        border-top: 2px #008C96 solid;
+    }
 `

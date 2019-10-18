@@ -112,6 +112,7 @@ const PackagesDiv = styled.div`
 `
 
 const Package = styled.div`
+
     min-width: 220px;
 `
 
