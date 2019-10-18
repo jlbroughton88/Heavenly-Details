@@ -7,7 +7,6 @@ html {
     letter-spacing: 1px;
     font-size: 1rem;
     padding: 0px;
-    overflow-y: hidden;
 }
 
 body {
@@ -50,6 +49,6 @@ a{
 
 /* PACKAGES */
 .p1{ background: #f6f7f1; }
-.p2{ background: #02cccc }
+.p2{ background: #02cccc; }
 .p3{ background: #7b49ec; color: #ffffff}
 .p4{ background: #2c2a6c; color: #ffffff}

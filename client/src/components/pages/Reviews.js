@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from "styled-components"
+import React from 'react';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 import NavBar from "../NavBar";
 import Footer from "../Footer";
 
@@ -69,6 +70,7 @@ const Reviews = () => {
             <Prompt>
                 <PromptHead>Customer Reviews</PromptHead>
                 <PromptBody>Heres what our loyal customers think of Heavenly Details.</PromptBody>
+                <Link to="/contact"><CallToAction>Contact Us</CallToAction></Link>
             </Prompt>
             <ReviewsDiv>
                 {reviews.map(review =>
@@ -113,6 +115,29 @@ const PromptHead = styled.h2`
 
 const PromptBody = styled.p`
     margin: 0;
+    margin-bottom: 20px;
+`
+
+const CallToAction = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px lightgrey solid;
+    background: #ffffff;
+    color: #008C96;
+    padding: 7px 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 100px;
+    transition: all .15s ease-out;
+
+    :focus{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
+
+    :hover{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
 `
 
 const ReviewsDiv = styled.div`
@@ -138,6 +163,9 @@ const ReviewDiv = styled.div`
     padding: 30px;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     align-self: center;
+    border-radius: 5px;
+    background: rgb(255,255,255);
+background: linear-gradient(58deg, rgba(255,255,255,1) 0%, rgba(0,140,150,0.12780269058295968) 100%);
 
 
     @media(max-width: 850px) {

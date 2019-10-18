@@ -150,17 +150,24 @@ const Header =  styled.h2`
 `
 
 const ViewAllBtn = styled.div`
-    border: 1px solid lightgrey;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    border: 2px lightgrey solid;
+    background: #ffffff;
+    color: #008C96;
+    padding: 7px 10px;
+    font-size: 1rem;
+    border-radius: 4px;
     width: 70px;
-    border-radius: 3px;
+    transition: all .15s ease-out;
+
+    :focus{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
 
     :hover{
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-        border: 1px solid grey;
     }
 `
 

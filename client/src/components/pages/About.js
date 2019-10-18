@@ -1,9 +1,9 @@
 import React from 'react';
 import NavBar from "../NavBar";
-import AboutBanner from "../AboutBanner";
+import AboutBanner from "../About/AboutBanner";
 import Footer from "../Footer";
 import styled from "styled-components";
-import AboutBody from "../AboutBody"
+import AboutBody from "../About/AboutBody"
 
 const About = () => {
     return (
