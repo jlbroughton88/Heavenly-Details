@@ -50,18 +50,24 @@ const MotherDiv = styled.div`
 `
 
 const Container = styled.div`
-    width: 700px;
+    width: 1100px;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 30% 30% 30%;
     justify-content: center;
     aligh-items: center;
     justify-items: center;
     grid-gap: 30px 30px;
     margin-bottom: 100px;    
     
-    @media(max-width: 725px) {
+    @media(max-width: 1100px) {
+        width: 800px
+        grid-template-columns: 45% 45%;
+        grid-gap: 30px 30px;
+    }
+
+    @media(max-width: 800px) {
         width: 500px
-        grid-template-columns: 60%;
+        grid-template-columns: 100%;
     }
     
     @media(max-width: 450px) {
@@ -71,12 +77,16 @@ const Container = styled.div`
 
 const PhotoBlock = styled.img`
     height: auto;
-    width: 250px;
+    width: 300px;
     align-self: center;
 
 
-    @media(max-width: 725px) {
-        width: 400px
+    @media(max-width: 1100px) {
+        width: 350px
+    }
+
+    @media(max-width: 800px) {
+        width: 450px
     }
 
     @media(max-width: 450px) {
