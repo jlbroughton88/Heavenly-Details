@@ -164,8 +164,7 @@ const ReviewDiv = styled.div`
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     align-self: center;
     border-radius: 5px;
-    background: rgb(255,255,255);
-background: linear-gradient(58deg, rgba(255,255,255,1) 0%, rgba(0,140,150,0.12780269058295968) 100%);
+
 
 
     @media(max-width: 850px) {

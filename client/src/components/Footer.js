@@ -101,7 +101,7 @@ const LinksDiv = styled.div`
     height: 60px;
     position: relative;
 
-    @media(max-width: 600px) {
+    @media(max-width: 650px) {
         grid-template-columns: 45% 45%
         width: 150px;
         justify-items: end;
