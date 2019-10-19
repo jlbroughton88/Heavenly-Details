@@ -4,8 +4,12 @@ import styled from "styled-components";
 const FullBanner = () => {
     return (
         <MotherDiv>
-            <Heading>Full Package</Heading>
-            <Para>Full Paragraph</Para>
+            <HeadingDiv className="p4">
+                <Heading>Full Package</Heading>
+            </HeadingDiv>
+            <ParaDiv>
+                <Para>Full Paragraph</Para>
+            </ParaDiv>
         </MotherDiv>
     )
 }
@@ -18,20 +22,46 @@ const MotherDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background: #ffffff;
+    width: 100%;
 
     @media(max-width: 830px) {
         width: 75%;
     }
 `
 
+const HeadingDiv = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7%;
+    width: 75%;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    @media(max-width: 830px) {
+        width: 100%;
+    }
+`
+
+
 const Heading = styled.h1`
     font-size: 2rem;
     margin: 0;
-    margin-bottom: 20px;
 
 `
+
+const ParaDiv = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7%;
+    width: 75%;
+`
+
+
 
 const Para = styled.h3`
     margin: 0;
