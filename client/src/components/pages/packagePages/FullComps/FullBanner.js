@@ -4,8 +4,8 @@ import styled from "styled-components";
 const FullBanner = () => {
     return (
         <MotherDiv>
-            <Heading>Express Package</Heading>
-            <Para>Express Paragraph</Para>
+            <Heading>Full Package</Heading>
+            <Para>Full Paragraph</Para>
         </MotherDiv>
     )
 }

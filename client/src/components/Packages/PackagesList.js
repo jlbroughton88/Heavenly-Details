@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 const PackagesList = () => {
     return (
@@ -8,7 +9,12 @@ const PackagesList = () => {
 
                 <Package>
                     <PackageHeadDiv className="p1">
-                        <PackageHead >Express Detail</PackageHead>
+                        <PackageHead >
+                            <Name>Basic</Name>
+                            <Link to="/packages/basic">
+                                <CallToAction>Learn more</CallToAction>
+                            </Link>
+                        </PackageHead>
                     </PackageHeadDiv>
                     <DetailListDiv>
                         <DetailList>
@@ -28,7 +34,12 @@ const PackagesList = () => {
 
                 <Package>
                     <PackageHeadDiv className="p2">
-                        <PackageHead >Basic</PackageHead>
+                        <PackageHead >
+                            <Name>Express</Name>
+                            <Link to="/packages/express">
+                                <CallToAction>Learn more</CallToAction>
+                            </Link>
+                        </PackageHead>
                     </PackageHeadDiv>
                     <DetailListDiv>
                         <DetailList>
@@ -45,7 +56,12 @@ const PackagesList = () => {
 
                 <Package>
                     <PackageHeadDiv className="p3">
-                        <PackageHead >Interior</PackageHead>
+                        <PackageHead >
+                            <Name>Interior</Name>
+                            <Link to="/packages/interior">
+                                <CallToAction>Learn more</CallToAction>
+                            </Link>
+                        </PackageHead>
                     </PackageHeadDiv>
                     <DetailListDiv>
                         <DetailList>
@@ -62,7 +78,12 @@ const PackagesList = () => {
 
                 <Package>
                     <PackageHeadDiv className="p4">
-                        <PackageHead >Full Detail</PackageHead>
+                        <PackageHead >
+                            <Name>Full Detail</Name>
+                            <Link to="/packages/fulldetail">
+                                <CallToAction>Learn more</CallToAction>
+                            </Link>
+                        </PackageHead>
                     </PackageHeadDiv>
                     <DetailListDiv>
                         <DetailList>
@@ -119,7 +140,7 @@ const Package = styled.div`
 const PackageHeadDiv = styled.div`
     display: flex;
     max-width: 240px;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 7%;
     padding-right: 7%;
@@ -136,7 +157,37 @@ const PackageHeadDiv = styled.div`
 `
 
 const PackageHead = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 88px;
+`
+
+const Name = styled.div`
     font-size: 1.5rem;
+    margin-bottom: 5px;
+`
+
+const CallToAction = styled.button`
+    -webkit-appearance: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.8rem;
+    border: 2px lightgrey solid;
+    background: #ffffff;
+    color: #2c2a6c;
+    border-radius: 4px;
+    transition: all .15s ease-out;
+    cursor: pointer;
+
+    :focus{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
+
+    :hover{
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    }
 `
 
 const DetailListDiv = styled.div`
