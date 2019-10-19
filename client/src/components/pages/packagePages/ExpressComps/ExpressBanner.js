@@ -4,8 +4,12 @@ import styled from "styled-components";
 const ExpressBanner = () => {
     return (
         <MotherDiv>
-            <Heading>Express Package</Heading>
-            <Para>Express Paragraph</Para>
+            <HeadingDiv className="p2">
+                <Heading>Express Package</Heading>
+            </HeadingDiv>
+            <ParaDiv>
+                 <Para>Express Paragraph</Para>
+            </ParaDiv>
         </MotherDiv>
     )
 }
@@ -18,22 +22,45 @@ const MotherDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background: #ffffff;
+    width: 100%;
 
     @media(max-width: 830px) {
         width: 75%;
     }
 `
 
-const Heading = styled.h1`
-    font-size: 2rem;
-    margin: 0;
+const HeadingDiv = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7%;
+    width: 75%;
+    height: 60px;
     margin-bottom: 20px;
+    border-radius: 5px;
+
+    @media(max-width: 830px) {
+        width: 100%;
+    }
+`
+
+const Heading = styled.h1`
+    font-size: 1.5rem;
+    margin: 0;
 
 `
 
-const Para = styled.h3`
+const ParaDiv = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 7%;
+    width: 75%;
+`
+
+const Para = styled.p`
     margin: 0;
     font-size: 1.2rem;
 `

@@ -139,7 +139,6 @@ const Package = styled.div`
 
 const PackageHeadDiv = styled.div`
     display: flex;
-    max-width: 240px;
     justify-content: flex-start;
     align-items: center;
     padding-left: 7%;
