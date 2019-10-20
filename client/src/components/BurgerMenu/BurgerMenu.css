@@ -31,8 +31,10 @@
   
     /* Color/shape of burger icon bars */
     .bm-burger-bars {
+      
       background: #373a47;
       transition: all .15s ease-out;
+      border-radius: 2px;
     }
      
     /* Color/shape of burger icon bars on hover*/
@@ -103,7 +105,8 @@
       margin-left: -31%;
       height: 271px !important;
       width: 180px !important;
-      top: 0 !important;
+      top: 0;
+      right: 0;
 
   
     }

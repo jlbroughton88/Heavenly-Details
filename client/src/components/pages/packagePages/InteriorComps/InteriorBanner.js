@@ -59,6 +59,10 @@ const ParaDiv = styled.div`
     align-items: center;
     padding-left: 7%;
     width: 75%;
+
+    @media(max-width: 830px) {
+        width: 100%;
+    }
 `
 
 
