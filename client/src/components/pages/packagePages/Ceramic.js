@@ -46,7 +46,7 @@ const IncludesDiv = styled.div`
 `
 
 const IncludedBlock = styled.div`
-  background: grey;
+background: #dedede;
 `
 
 const Head = styled.h3``

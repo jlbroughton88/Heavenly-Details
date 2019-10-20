@@ -84,12 +84,12 @@ export default Interior;
 const MotherDiv = styled.div``
 
 const Container = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-flex-direction: column;
-margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 100px;
 `
 
 const IncludesDiv = styled.div`
@@ -111,7 +111,7 @@ const IncludedBlock = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: lightgrey;
+  background: #dedede;
   border-radius: 5px;
   
 `
