@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.0200a3d9.chunk.css",
+    "main.css": "/static/css/main.cf609b4b.chunk.css",
     "main.js": "/static/js/main.ed443923.chunk.js",
     "main.js.map": "/static/js/main.ed443923.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.985e6003.js",
@@ -8,9 +8,9 @@
     "static/js/2.35e03781.chunk.js": "/static/js/2.35e03781.chunk.js",
     "static/js/2.35e03781.chunk.js.map": "/static/js/2.35e03781.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.00da4485608ff48b467d6b9ae3574eec.js": "/precache-manifest.00da4485608ff48b467d6b9ae3574eec.js",
+    "precache-manifest.c8e48b5dcbbc5baab49bdc6ccccc9f31.js": "/precache-manifest.c8e48b5dcbbc5baab49bdc6ccccc9f31.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0200a3d9.chunk.css.map": "/static/css/main.0200a3d9.chunk.css.map",
+    "static/css/main.cf609b4b.chunk.css.map": "/static/css/main.cf609b4b.chunk.css.map",
     "static/media/alfaCockpit.jpg": "/static/media/alfaCockpit.1f10a285.jpg",
     "static/media/alfaFront.jpg": "/static/media/alfaFront.b9f19072.jpg",
     "static/media/alfaInterior.jpg": "/static/media/alfaInterior.20f099b8.jpg",
@@ -46,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.985e6003.js",
     "static/js/2.35e03781.chunk.js",
-    "static/css/main.0200a3d9.chunk.css",
+    "static/css/main.cf609b4b.chunk.css",
     "static/js/main.ed443923.chunk.js"
   ]
 }
