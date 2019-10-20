@@ -175,7 +175,7 @@ const CallToAction = styled.button`
     font-size: 0.8rem;
     border: 2px lightgrey solid;
     background: #ffffff;
-    color: #2c2a6c;
+    color: #008C96;
     border-radius: 4px;
     transition: all .15s ease-out;
     cursor: pointer;

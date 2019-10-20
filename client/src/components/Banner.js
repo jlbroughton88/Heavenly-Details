@@ -71,7 +71,11 @@ const CallToActionDiv = styled.div`
     width: 60%;
 `
 
-const CallToAction1 = styled.div`
+const CallToAction1 = styled.button`
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    width: 154px;
     display: flex;
     justify-content: center;
     text-align: center
@@ -82,7 +86,6 @@ const CallToAction1 = styled.div`
     font-size: 1rem;
     border-radius: 4px;
     margin-bottom: 20px;
-    width: 130px;
     transition: all .15s ease-out;
 
     :focus{
@@ -98,7 +101,11 @@ const CallToAction1 = styled.div`
     }
 `
 
-const CallToAction2 = styled.div`
+const CallToAction2 = styled.button`
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    width: 154px;
     display: flex;
     justify-content: center;
     text-align: center
@@ -108,7 +115,7 @@ const CallToAction2 = styled.div`
     padding: 7px 10px;
     font-size: 1rem;
     border-radius: 4px;
-    width: 130px;
+    
     transition: all .15s ease-out;
 
     :focus{
