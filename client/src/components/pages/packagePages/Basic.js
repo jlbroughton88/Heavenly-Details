@@ -121,7 +121,7 @@ const IncludedBlock = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: lightgrey;
+  background: #dedede;
   border-radius: 5px;
 `
 

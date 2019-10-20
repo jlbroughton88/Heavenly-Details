@@ -102,7 +102,7 @@ const MotherDiv = styled.div`
     }
 
     @media(max-width: 500px) {
-        // height: 380px;
+        height: 525px;
         width: 400px;
     }
 

@@ -69,7 +69,7 @@ export default FAQ;
 
 const MotherDiv = styled.div`
     width: 436px;
-    height: 550px;
+    height: 575px;
     display: flex;
     flex-direction: column;
     justify-content: center;

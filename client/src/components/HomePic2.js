@@ -5,7 +5,9 @@ import Interior from "./images/photos/interior.jpg"
 const HomePic2 = () => {
     return (
         <MotherDiv>
-            <Container></Container>
+            <Container>
+                <Pic src={Interior} alt=""/>
+            </Container>
         </MotherDiv>
     )
 }
@@ -24,11 +26,7 @@ const MotherDiv = styled.div`
     max-height: 350px;
 
     @media(max-width: 475px) {
-        height: 250px;
-    }
-
-    @media(max-width: 475px) {
-        height: 225px;
+        height: 300px;
     }
 
     @media(max-width: 375px) {
@@ -39,12 +37,11 @@ const MotherDiv = styled.div`
 
 const Container = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: 550px;
-    padding-top: 7%;
-    background: url(${Interior}) no-repeat center/contain;
+    // background: url(${Interior}) no-repeat center/contain;
     color: black;
 
     @media(max-width:850px) {
@@ -66,4 +63,10 @@ const Container = styled.div`
     @media(max-width: 375px) {
         width: 310px;
     }
+`
+
+const Pic = styled.img`
+   width: 100%;
+    height: auto;
+    border-radius: 5px;
 `

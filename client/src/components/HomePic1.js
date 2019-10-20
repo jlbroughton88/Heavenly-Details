@@ -5,7 +5,9 @@ import Exterior from "./images/photos/exterior.jpeg"
 const HomePic1 = () => {
     return (
         <MotherDiv>
-            <Container></Container>
+            <Container>
+                <Pic src={Exterior} alt="" />
+            </Container>
         </MotherDiv>
     )
 }
@@ -28,7 +30,7 @@ const MotherDiv = styled.div`
     }
 
     @media(max-width: 475px) {
-        height: 225px;
+        height: 300px;
     }
 
     @media(max-width: 375px) {
@@ -39,12 +41,11 @@ const MotherDiv = styled.div`
 
 const Container = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: 550px;
-    padding-top: 7%;
-    background: url(${Exterior}) no-repeat center/contain;
+    // background: url(${Exterior}) no-repeat center/contain;
 
     @media(max-width:850px) {
         width: 500px
@@ -65,4 +66,10 @@ const Container = styled.div`
     @media(max-width: 375px) {
         width: 310px;
     }
+`
+
+const Pic = styled.img`
+   width: 100%;
+    height: auto;
+    border-radius: 5px;
 `
