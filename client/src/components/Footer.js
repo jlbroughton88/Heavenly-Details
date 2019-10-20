@@ -59,7 +59,6 @@ const MotherDiv = styled.footer`
     padding-top: 20px;
     padding-bottom: 20px;
     bottom: 0;
-    margin-top: 100px;
 `
 
 const MoverDiv1 = styled.div`
