@@ -133,6 +133,10 @@ const HeaderDiv = styled.div`
     flex-direction: column;
     margin-bottom: 20px;
 
+    @media(max-width: 500px) {
+        width: 400px;
+    }
+
     @media(max-width: 437px) {
         width: 336px;
     }
@@ -149,7 +153,11 @@ const Header =  styled.h2`
     border-bottom: #008C96 solid 2px;
 `
 
-const ViewAllBtn = styled.div`
+const ViewAllBtn = styled.button`
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +167,6 @@ const ViewAllBtn = styled.div`
     padding: 7px 10px;
     font-size: 1rem;
     border-radius: 4px;
-    width: 70px;
     transition: all .15s ease-out;
 
     :focus{

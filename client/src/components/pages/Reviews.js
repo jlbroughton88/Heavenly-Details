@@ -118,7 +118,11 @@ const PromptBody = styled.p`
     margin-bottom: 20px;
 `
 
-const CallToAction = styled.div`
+const CallToAction = styled.button`
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    width: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +132,6 @@ const CallToAction = styled.div`
     padding: 7px 10px;
     font-size: 1rem;
     border-radius: 4px;
-    width: 100px;
     transition: all .15s ease-out;
 
     :focus{

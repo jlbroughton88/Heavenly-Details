@@ -75,6 +75,10 @@ const MotherDiv = styled.div`
     justify-content: center;
     align-items: center;
 
+    @media(max-width: 500px) {
+        width: 400px;
+    }
+
     @media(max-width: 437px) {
         width: 336px;
     }
