@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import menu from "../../../images/photos/menu.svg"
 
 const ExpressBanner = () => {
     return (
@@ -58,9 +59,14 @@ const ParaDiv = styled.div`
     align-items: center;
     padding-left: 7%;
     width: 75%;
+
+    @media(max-width: 830px) {
+        width: 100%;
+    }
 `
 
 const Para = styled.p`
     margin: 0;
     font-size: 1.2rem;
+    margin-left: 1px;
 `
