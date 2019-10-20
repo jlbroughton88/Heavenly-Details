@@ -80,8 +80,7 @@ margin-bottom: 100px;
 `
 
 const IncludesDiv = styled.div`
-width: 100%;
-height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 45% 45%;
   grid-gap: 30px;
