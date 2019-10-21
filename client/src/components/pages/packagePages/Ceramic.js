@@ -52,7 +52,3 @@ background: #dedede;
 const Head = styled.h3``
 
 const Body = styled.p``
-
-const Img = styled.img`
-  width: 300px;
-`

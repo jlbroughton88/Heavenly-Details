@@ -5,7 +5,7 @@ const ContactBanner = () => {
     return (
         <MotherDiv>
             <Heading>Contact Us!</Heading>
-            <Para>We're here to help and answer any question you might have. We look forward to hearing from you. 😄</Para>
+            <Para>We're here to help and answer any question you might have. We look forward to hearing from you.</Para>
         </MotherDiv>
     )
 }

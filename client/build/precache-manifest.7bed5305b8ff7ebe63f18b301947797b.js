@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "22692cc043ef6a219a51b2371b0b504d",
+    "revision": "020daa79e2c1ed46f8cae31c006cf2b0",
     "url": "/index.html"
   },
   {
-    "revision": "8097f09c39c549a441ea",
+    "revision": "daa4de3654a35b8990cb",
     "url": "/static/css/main.4ff54a49.chunk.css"
   },
   {
-    "revision": "51ab68d91623082a255c",
-    "url": "/static/js/2.1b1e3e3c.chunk.js"
+    "revision": "fc3028510b550209f66b",
+    "url": "/static/js/2.985b01c0.chunk.js"
   },
   {
-    "revision": "8097f09c39c549a441ea",
-    "url": "/static/js/main.248e0093.chunk.js"
+    "revision": "daa4de3654a35b8990cb",
+    "url": "/static/js/main.cb1f68c8.chunk.js"
   },
   {
     "revision": "cbee8d858c084296ccff",
@@ -102,10 +102,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ccc20879ec4268a8176754343a2433d7",
     "url": "/static/media/lexusSuvSide2.ccc20879.jpg"
-  },
-  {
-    "revision": "1cb0a388df20b5816e461f7f0ae8aff5",
-    "url": "/static/media/menu.1cb0a388.svg"
   },
   {
     "revision": "5b9453f7c8741b9337d517cdbdc2397d",

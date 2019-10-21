@@ -11,10 +11,8 @@ import vacuum from "../../images/photos/includedPics/vacuum.jpg";
 import wash from "../../images/photos/includedPics/wash.jpg";
 import tireShine from "../../images/photos/includedPics/tireShine.png";
 import wax from "../../images/photos/includedPics/wax.jpg";
-import shampooFloorMats from "../../images/photos/includedPics/shampooFloorMats.jpeg";
 import steam from "../../images/photos/includedPics/steam.jpg";
-import dust from "../../images/photos/includedPics/dust.jpg";
-import conditionInterior from "../../images/photos/includedPics/conditionInterior.jpg";
+
 
 const includedArr = [
   {

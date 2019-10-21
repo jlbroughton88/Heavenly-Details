@@ -14,9 +14,10 @@ let nodeenv = process.env.NODE_ENV;
 
 // FIGURE OUT WHY IT WONT WORK WITH THE 
   // NODEMAILER CODE
-
-if(nodeenv === 'production') {
-    app.use(express.static("client/build"));
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+if(nodeenv === 'production') { 
     app.get("/*", (req, res) => {
       res.sendFile(path.join(__dirname, "./client/build/index.html"))
     })
@@ -28,9 +29,7 @@ if(nodeenv === 'production') {
   }
 
 
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+
 
 const transporter = nodemailer.createTransport({
   host: "smtp.ethereal.email",

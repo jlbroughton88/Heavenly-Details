@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import menu from "../../../images/photos/menu.svg"
 
 const ExpressBanner = () => {
     return (

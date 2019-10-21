@@ -3,14 +3,8 @@ import InteriorBanner from "./InteriorComps/InteriorBanner";
 import NavBar from "../../NavBar";
 import Footer from "../../Footer";
 import styled from "styled-components";
-
-import cleanRims from "../../images/photos/includedPics/cleanRims.jpg";
-import windows from "../../images/photos/includedPics/windows.jpg";
-import doorJams from "../../images/photos/includedPics/doorJams.jpg";
 import vacuum from "../../images/photos/includedPics/vacuum.jpg";
 import wash from "../../images/photos/includedPics/wash.jpg";
-import tireShine from "../../images/photos/includedPics/tireShine.png";
-import wax from "../../images/photos/includedPics/wax.jpg";
 import shampooFloorMats from "../../images/photos/includedPics/shampooFloorMats.jpeg";
 import steam from "../../images/photos/includedPics/steam.jpg";
 import dust from "../../images/photos/includedPics/dust.jpg";
