@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const nodemailer = require("nodemailer")
-const creds = require("./.env")
 const cors = require("cors")
 const bodyParser = require('body-parser');
 const dotenv = require("dotenv");
@@ -32,6 +31,27 @@ transporter.verify((err, success) => {
   }
 })
 
+app.use(cors());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static("client/build"));
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"))
+  })
+} else {
+  app.use(express.static(path.join(__dirname, "/client/public")));
+  app.get("/*", (req, res) => {
+    res.sendFile(path.join(__dirname, "./client/public/index.html"))
+  })
+};
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
 
 app.post("/send", (req, res) => {
   let name = req.body.name;
@@ -59,27 +79,9 @@ app.post("/send", (req, res) => {
   })
 })
 
-app.use(cors());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static("client/build"));
-  app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"))
-  })
-} else {
-  app.use(express.static(path.join(__dirname, "/client/public")));
-  app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/public/index.html"))
-  })
-}
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  next();
-})
+
 
 app.listen(process.env.PORT || 5001, () => {
   console.log("Server listening on port 5001")
