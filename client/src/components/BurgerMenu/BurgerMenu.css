@@ -78,8 +78,8 @@
       overflow: hidden;
       display: flex;
       justify-content: flex-end;
-      border-left: #d4d4dc solid 1px;
-      border-bottom: #d4d4dc solid 1px;
+      border-left: #008C96 solid 2px;
+      border-bottom: #008C96 solid 2px;
       overflow: hidden;
       border-bottom-left-radius: 5px
     }
@@ -118,9 +118,9 @@
         color: #d4d4dc;
         text-decoration: none;
         outline: none;
-        transition: all .3s ease-out;
+        transition: all .15s ease-out;
     }
   
     .menu-item:hover{
-      color:#879FFF;
+      color:#008C96;
     }

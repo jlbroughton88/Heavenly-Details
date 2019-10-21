@@ -27,13 +27,13 @@ class ContactForm extends React.Component{
             <MotherDiv>
                 <Form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <NameDiv>
-                        <NameInput type="text"  id="name"  autoComplete="off" placeholder="" /> 
+                        <NameInput type="text"  id="name"  autoComplete="off" placeholder="Name" /> 
                     </NameDiv>
                     <EmailDiv>
-                        <EmailInput type="email"  id="email"  autoComplete="off" placeholder="" /> 
+                        <EmailInput type="email"  id="email"  autoComplete="off" placeholder="Email" /> 
                     </EmailDiv>
                     <MessageDiv>
-                        <MessageInput  id="message"  autoComplete="off" placeholder="" /> 
+                        <MessageInput  id="message"  autoComplete="off" placeholder="Message" /> 
                     </MessageDiv>
                     <SubmitBtn type="submit">Submit</SubmitBtn>
                 </Form>
@@ -44,20 +44,83 @@ class ContactForm extends React.Component{
 
 export default ContactForm;
 
-const MotherDiv = styled.div``
+const MotherDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
-const Form = styled.form``
+`
 
-const NameDiv = styled.div``
+const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+`
 
-const NameInput = styled.input``
+const NameDiv = styled.div`
+    margin-bottom: 20px;
+    width: 400px;
+`
 
-const EmailDiv = styled.div``
+const NameInput = styled.input`
+    margin: 0;
+    -webkit-appearance: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 5px;
+`
 
-const EmailInput = styled.input``
+const EmailDiv = styled.div`
+    margin-bottom: 20px;
+    width: 400px;
+`
 
-const MessageDiv = styled.div``
+const EmailInput = styled.input`
+    margin: 0;
+    -webkit-appearance: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 5px;
+`
 
-const MessageInput = styled.textarea``
+const MessageDiv = styled.div`
+    margin-bottom: 20px
+    width: 400px;
+`
 
-const SubmitBtn = styled.button``
+const MessageInput = styled.textarea`
+    margin: 0;
+    outline: none;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 5px;
+`
+
+const SubmitBtn = styled.button`
+-webkit-appearance: none;
+border-radius: 4px;
+outline: none;
+font-size: 1.1rem;
+border: 2px lightgrey solid;
+background: #ffffff;
+color: #008C96;
+border-radius: 4px;
+transition: all .15s ease-out;
+cursor: pointer;
+
+:focus{
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+}
+
+:hover{
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+}
+`
