@@ -78,8 +78,8 @@
       overflow: hidden;
       display: flex;
       justify-content: flex-end;
-      border-left: #008C96 solid 2px;
-      border-bottom: #008C96 solid 2px;
+      border-left: #00979d solid 2px;
+      border-bottom: #00979d solid 2px;
       overflow: hidden;
       border-bottom-left-radius: 5px
     }
@@ -122,5 +122,5 @@
     }
   
     .menu-item:hover{
-      color:#008C96;
+      color:#00979d;
     }

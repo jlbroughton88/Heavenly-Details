@@ -80,7 +80,7 @@ const CallToAction1 = styled.button`
     justify-content: center;
     text-align: center
     border: 2px lightgrey solid;
-    background: #008C96;
+    background: #00979d;
     color: #ffffff;
     padding: 7px 10px;
     font-size: 1rem;
@@ -111,7 +111,7 @@ const CallToAction2 = styled.button`
     text-align: center
     border: 2px lightgrey solid;
     background: #ffffff;
-    color: #008C96;
+    color: #00979d;
     padding: 7px 10px;
     font-size: 1rem;
     border-radius: 4px;

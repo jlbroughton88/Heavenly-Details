@@ -98,7 +98,7 @@ margin-bottom: 20px;
 `
 
 const FaqDiv = styled.div`
-border-bottom: #008C96 solid 2px;
+border-bottom: #00979d solid 2px;
 `
 
 const FaqHead = styled.h3`
@@ -137,7 +137,7 @@ const ParaDiv = styled.div`
 `
 
 const Para = styled.p`
-border-left: #008C96 solid 2px;
+border-left: #00979d solid 2px;
 padding-left: 5px;
 margin: 0;
 `

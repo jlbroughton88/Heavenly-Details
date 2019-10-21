@@ -8,40 +8,69 @@ const Footer = () => {
     return (
         <MotherDiv>
 
-        <MoverDiv1>
-            <SocialDiv>
-                <SocialLink href="https://www.facebook.com/HeavenlyDetails704/">
-                    <Icon src={Facebook} alt="" />
-                </SocialLink>
-                <SocialLink href="https://www.instagram.com/heavenlydetailsclt">
-                    <Icon src={Instagram} alt="" />
-                </SocialLink>
-            </SocialDiv>
-        </MoverDiv1>
-
-
-        <MoverDiv2>
-                        <LinksDiv>
-                <Link to="/">
-                    <FooterLink>Home</FooterLink>
-                </Link>
-                <Link to="/about">
-                    <FooterLink>About</FooterLink>
-                </Link>
-                <Link to="/packages">
-                    <FooterLink>Packages</FooterLink>
-                </Link>
-                <Link to="/work">
-                    <FooterLink>Work</FooterLink>
-                </Link>
-                <Link to="/contact">
-                    <FooterLink>Contact</FooterLink>
-                </Link>
-                <Link to="/reviews">
-                    <FooterLink>Reviews</FooterLink>
-                </Link>
+            <LeftDiv>
+                <LinksDiv>
+                    <Link to="/">
+                        <FooterLink>Home</FooterLink>
+                    </Link>
+                    <Link to="/about">
+                        <FooterLink>About</FooterLink>
+                    </Link>
+                    <Link to="/packages">
+                        <FooterLink>Packages</FooterLink>
+                    </Link>
+                    <Link to="/work">
+                        <FooterLink>Work</FooterLink>
+                    </Link>
+                    <Link to="/contact">
+                        <FooterLink>Contact</FooterLink>
+                    </Link>
+                    <Link to="/reviews">
+                        <FooterLink>Reviews</FooterLink>
+                    </Link>
                 </LinksDiv>
-        </MoverDiv2>
+            </LeftDiv>
+
+            <RightDiv>
+                <Info className="normalFooter">
+                    <CallDiv>
+                        <CallH>Call Us!</CallH>
+                        <CallP>(704) 668-5788</CallP>
+                    </CallDiv>
+
+                    <EmailDiv>
+                        <EmailH>Email Us!</EmailH>
+                        <EmailP>heavenlydetails704@gmail.com</EmailP>
+                    </EmailDiv>
+                </Info>
+                <Info2 className="smallFooter">
+                    <CallDiv2>
+                        <CallH2>Call Us!</CallH2>
+                        <a href="tel:704-668-5788"><CallP2>(704)668-5788</CallP2></a>
+                    </CallDiv2>
+
+                    <EmailDiv2>
+                        <a href="mailto:heavenlydetails704@gmail.com"><EmailH2>Email Us!</EmailH2></a>
+                    </EmailDiv2>
+                </Info2>
+                <SocialDiv>
+                    <IconDiv>
+                        <SocialLink href="https://www.facebook.com/HeavenlyDetails704/">
+                            <Icon src={Facebook} alt="" />
+                        </SocialLink>
+                        <SocialLink href="https://www.instagram.com/heavenlydetailsclt">
+                            <Icon src={Instagram} alt="" />
+                        </SocialLink>
+                    </IconDiv>
+                </SocialDiv>
+            </RightDiv>
+
+
+
+
+
+
+
 
         </MotherDiv>
     )
@@ -51,64 +80,42 @@ export default Footer;
 
 const MotherDiv = styled.footer`
     width: 100%;
-    background: #008C96;
+    background: #00979d;
     color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     bottom: 0;
 `
 
-const MoverDiv1 = styled.div`
-    display: flex;
-    justify-content: flex-start;
-    width: 30%;
-
-
-    @media(max-width: 600px) {
-        padding-right: 0;
-        width: 100%;
-        justify-content: flex-start;
-    }
-`
-
-const MoverDiv2 = styled.div`
+const RightDiv = styled.div`
     display: flex;
     justify-content: flex-end;
-    width: 67%;
-    padding-right: 3%;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-right: 5%;
+`
 
-
-    @media(max-width: 600px) {
-        padding-right: 0;
-        margin-right: 20px
-        width: 100%;
-        justify-content: flex-end;
-    }
+const LeftDiv = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-left: 5%;
 `
 
 const LinksDiv = styled.div`
     display: inline-grid;
-    grid-template-columns: 30% 30% 30%
+    grid-template-columns: 100%;
     grid-gap: 20px;
     justify-content: space-evenly;
     align-items: center;
     align-self: center;
-    width: 400px;
-    justify-items: center;
-    height: 60px;
+    width: 100%;
+    justify-items: flex-start;
     position: relative;
-
-    @media(max-width: 650px) {
-        grid-template-columns: 45% 45%
-        width: 150px;
-        justify-items: end;
-        grid-gap: 5px;
-    }
-    
-
 `
 
 const FooterLink = styled.p`
@@ -132,35 +139,33 @@ const FooterLink = styled.p`
 
 const SocialDiv = styled.div`
     height: 100%;
-    width: 200px
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-self: flex-start;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
 
-    @media(max-width: 600px) {
-        justify-content: flex-start;
-        width: 150px;
-        margin-left: 20px;
-    }
 `
 
 const SocialLink = styled.a`
     height: 100%;
-    width: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;   
     margin-top: 0;
     margin-bottom: 0;
     align-self: center;
 
-    @media(max-width: 600px) {
-        justify-content: flex-start;
-        align-self: flex-start;
-        width: 45%;
-    }
+`
+
+const IconDiv = styled.div`
+    height: 100%;
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+
 `
 
 const Icon = styled.img`
@@ -168,7 +173,85 @@ const Icon = styled.img`
     width: 65%;
     margin: 5%;
 
-    @media(max-width: 600px) {
-        margin: 0;
-    }
+`
+
+const Info = styled.div`
+    width: 100%;
+`
+
+const CallDiv = styled.div`
+        display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 15px;
+`
+
+const CallH = styled.h3`
+    margin: 0;
+    margin-bottom: 10px;
+`
+
+const CallP = styled.p`
+    margin: 0;
+    margin-bottom: 10px;
+`
+
+const EmailDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 15px;
+`
+
+const EmailH = styled.h3`
+    margin: 0;
+    margin-bottom: 10px;
+`
+
+const EmailP = styled.p`
+    margin: 0;
+    margin-bottom: 10px;
+`
+
+
+// SMALL
+const Info2 = styled.div`
+    width: 100%;
+`
+
+const CallDiv2 = styled.div`
+        display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 15px;
+`
+
+const CallH2 = styled.h3`
+    margin: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px #fffff solid;
+`
+
+const CallP2 = styled.p`
+    margin: 0;
+    margin-bottom: 10px;
+    
+`
+
+const EmailDiv2 = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 15px;
+`
+
+const EmailH2 = styled.h3`
+    margin: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px #fffff solid;
+`
+
+const EmailP2 = styled.p`
+    margin: 0;
+    margin-bottom: 10px;
 `

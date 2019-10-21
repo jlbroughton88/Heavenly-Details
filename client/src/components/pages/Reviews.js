@@ -128,7 +128,7 @@ const CallToAction = styled.button`
     align-items: center;
     border: 2px lightgrey solid;
     background: #ffffff;
-    color: #008C96;
+    color: #00979d;
     padding: 7px 10px;
     font-size: 1rem;
     border-radius: 4px;
@@ -181,7 +181,7 @@ const ReviewDiv = styled.div`
 
 const Name = styled.h3`
     margin: 0;
-    border-bottom: 2px #008C96 solid;
+    border-bottom: 2px #00979d solid;
     width: 110px;
     padding-bottom: 5px;
     margin-bottom: 20px;

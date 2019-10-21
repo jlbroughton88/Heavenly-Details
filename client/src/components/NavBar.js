@@ -43,7 +43,8 @@ const MotherDiv = styled.nav`
     flex-direction: row;
     height: 7.5%;
     width: 100%;
-    background: #f6f7f1;
+    background: #00979d;
+    color: #ffffff;
     width: 100%;
     min-height: 55px;
     top: 0;
@@ -70,13 +71,13 @@ const Logo = styled.p`
     transition: all .15s ease-out;
 
     :focus{
-        border-bottom: 2px #008C96 solid;
-        border-top: 2px #008C96 solid;
+        border-bottom: 2px #00979d solid;
+        border-top: 2px #00979d solid;
     }
 
     :hover{
-        border-bottom: 2px #008C96 solid;
-        border-top: 2px #008C96 solid;
+        border-bottom: 2px #00979d solid;
+        border-top: 2px #00979d solid;
     }
 `
 const RightDiv = styled.div`
@@ -111,12 +112,12 @@ const LinkP = styled.p`
     transition: all .15s ease-out;
 
     :focus{
-        border-bottom: 2px #008C96 solid;
-        border-top: 2px #008C96 solid;
+        border-bottom: 2px #00979d solid;
+        border-top: 2px #00979d solid;
     }
 
     :hover{
-        border-bottom: 2px #008C96 solid;
-        border-top: 2px #008C96 solid;
+        border-bottom: 2px #00979d solid;
+        border-top: 2px #00979d solid;
     }
 `

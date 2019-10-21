@@ -16,7 +16,9 @@ class ContactForm extends React.Component{
         })
         .then((res) => { console.log(res) })
         .catch((err) => { console.log(err.response) })
-    }
+        .then(this.resetForm())
+        .then(alert("Email sent!"))
+    } 
 
     resetForm() {
         document.getElementById("contact-form").reset();
@@ -25,6 +27,10 @@ class ContactForm extends React.Component{
     render() {
         return(
             <MotherDiv>
+                <HeadDiv>
+                    <Head>What can we help you with?</Head>
+                </HeadDiv>
+                
                 <Form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
                     <NameDiv>
                         <NameInput type="text"  id="name"  autoComplete="off" placeholder="Name" /> 
@@ -51,6 +57,14 @@ const MotherDiv = styled.div`
     align-items: center;
     width: 100%;
 
+`
+
+const HeadDiv = styled.div`
+    width: 400px;
+`
+
+const Head = styled.h3`
+    text-align: start;
 `
 
 const Form = styled.form`
@@ -111,7 +125,7 @@ outline: none;
 font-size: 1.1rem;
 border: 2px lightgrey solid;
 background: #ffffff;
-color: #008C96;
+color: #00979d;
 border-radius: 4px;
 transition: all .15s ease-out;
 cursor: pointer;

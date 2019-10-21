@@ -150,7 +150,7 @@ const Header =  styled.h2`
     margin: 0;
     margin-bottom: 20px;
     font-weight: bolder;
-    border-bottom: #008C96 solid 2px;
+    border-bottom: #00979d solid 2px;
 `
 
 const ViewAllBtn = styled.button`
@@ -163,7 +163,7 @@ const ViewAllBtn = styled.button`
     align-items: center;
     border: 2px lightgrey solid;
     background: #ffffff;
-    color: #008C96;
+    color: #00979d;
     padding: 7px 10px;
     font-size: 1rem;
     border-radius: 4px;
@@ -182,7 +182,7 @@ const Head = styled.h3``
 
 const Body = styled.p`
 padding-left: 5px
-border-left: 2px #008C96 solid;
+border-left: 2px #00979d solid;
 
 @media(max-width: 630px) {
     font-size: 0.95rem;
