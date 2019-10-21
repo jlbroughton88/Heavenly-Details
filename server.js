@@ -9,12 +9,13 @@ const dotenv = require("dotenv");
 dotenv.config();
 let user_env = process.env.USERNAME;
 let pass_env = process.env.PASS;
+let nodeenv = process.env.NODE_ENV;
 
 
 // FIGURE OUT WHY IT WONT WORK WITH THE 
   // NODEMAILER CODE
 
-if(process.env.NODE_ENV === 'production') {
+if(nodeenv === 'production') {
     app.use(express.static("client/build"));
     app.get("/*", (req, res) => {
       res.sendFile(path.join(__dirname, "./client/build/index.html"))
