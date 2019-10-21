@@ -7,7 +7,7 @@ const cors = require("cors")
 const bodyParser = require('body-parser');
 require("dotenv").config();
 let USER = process.env.USER;
-let PASS = user.env.PASS
+let PASS = process.env.PASS
 
 
 // FIGURE OUT WHY IT WONT WORK WITH THE 
