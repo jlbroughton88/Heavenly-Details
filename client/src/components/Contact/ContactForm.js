@@ -29,7 +29,7 @@ class ContactForm extends React.Component {
         return (
             <MotherDiv>
                 <HeadDiv className="p1">
-                    <Head>What can we help you with?</Head>
+                    <Head>How can we assist you?</Head>
                 </HeadDiv>
                 <MainDiv>
                     <Form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
@@ -105,10 +105,15 @@ const HeadDiv = styled.div`
     margin-bottom: 40px;  
     display: flex;
     align-items: center;
+    align-self: center;
     height: 50px;
     padding: 15px 20px;
     box-sizing: border-box;
     border-radius: 5px;
+
+    @media(max-width: 550px) {
+        width: 73%;
+    }
     
 `
 
@@ -117,7 +122,9 @@ const Head = styled.h3`
     text-align: start;
     font-size: 1.5rem;
 
-
+    @media(max-width: 550px) {
+        font-size: 1.25rem
+    }
 `
 
 const Form = styled.form`
@@ -294,13 +301,17 @@ const EmailP = styled.p`
 `
 
 const CTAParent = styled.div`
-width: 400px;
+    width: 400px;
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
     border-radius: 5px;
     padding: 15px 20px;
     box-sizing: border-box;
+
+    @media(max-width: 550px) {
+        width: 73%;
+    }
 `
 
 const CallToActionDiv = styled.div`
