@@ -130,6 +130,7 @@ const Head = styled.h3`
     @media(max-width: 437px) {
         font-size: 1.1rem;
     }
+
 `
 
 const ParaDiv = styled.div`
@@ -137,9 +138,10 @@ const ParaDiv = styled.div`
 `
 
 const Para = styled.p`
-border-left: #00979d solid 2px;
-padding-left: 5px;
-margin: 0;
+    border-left: #00979d solid 2px;
+    padding-left: 5px;
+    margin: 0;
+    border-radius: 5px;
 `
 
 

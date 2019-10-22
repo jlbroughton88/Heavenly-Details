@@ -144,6 +144,7 @@ const PackageHeadDiv = styled.div`
     padding-left: 7%;
     padding-right: 7%;
     height: 88px;
+    border-radius: 5px;
 
 
     @media(max-width: 1150px) {

@@ -8,17 +8,6 @@ const ContactBanner = () => {
                 <Heading>Contact Us!</Heading>
                 <Para>We're here to help and answer any question you might have. We look forward to hearing from you.</Para>
             </Container>
-            <Info>
-                <CallDiv>
-                    <CallH>Call Us!</CallH>
-                    <CallP>(704) 668-5788</CallP>
-                </CallDiv>
-
-                <EmailDiv>
-                    <EmailH>Email Us!</EmailH>
-                    <EmailP>heavenlydetails704@gmail.com</EmailP>
-                </EmailDiv>
-            </Info>
         </MotherDiv>
     )
 }
@@ -46,22 +35,6 @@ const Container = styled.div`
         width: 75%;
     }
     `
-
-const Info = styled.div`
-    width: 400px;
-`
-
-const CallDiv = styled.div``
-
-const CallH = styled.h3``
-
-const CallP = styled.p``
-
-const EmailDiv = styled.div``
-
-const EmailH = styled.h3``
-
-const EmailP = styled.p``
 
 const Heading = styled.h1`
     font-size: 2rem;

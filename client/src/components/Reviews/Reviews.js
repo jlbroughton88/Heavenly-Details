@@ -183,6 +183,7 @@ const Head = styled.h3``
 const Body = styled.p`
 padding-left: 5px
 border-left: 2px #00979d solid;
+border-radius: 5px;
 
 @media(max-width: 630px) {
     font-size: 0.95rem;

@@ -2,11 +2,13 @@ import React from 'react';
 import styled from "styled-components"
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import { Link } from "react-router-dom";
+import "../index.scss";
 
 
 const NavBar = () => {
     return (
-        <MotherDiv>
+        <MotherDiv className="navBar">
+
             <LeftDiv>
                 <LogoDiv>
                     <Link to="/">
@@ -32,6 +34,7 @@ const NavBar = () => {
                 </NavLinks>
                 <BurgerMenu className="burgerMenu" />
             </RightDiv>
+
         </MotherDiv>
     )
 }
