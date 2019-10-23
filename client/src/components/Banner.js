@@ -36,30 +36,32 @@ const Heading = styled.h1`
     }
 
     @media(max-width: 435px) {
-        font-size: 2.5rem;   
+        font-size: 2.3rem;   
     }
 
     @media(max-width: 375px) {
-        font-size: 2.5rem;
+        align-self: center;
+        font-size: 2.2rem;
     }
 `
 
 const Slogan = styled.h3`
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
 
 
     @media(max-width: 475px) {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     @media(max-width: 435px) {
-        font-size: 1.4rem;
+        font-size: 1.09rem;
     } 
 
     @media(max-width: 375px) {
-        font-size: 1.3rem;
+        align-self: center;
+        font-size: 1.06rem;
     }
 `
 
