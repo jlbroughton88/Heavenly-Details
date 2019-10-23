@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components"
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import { Link } from "react-router-dom";
+import logo from "./images/photos/logo.png"
 import "../index.scss";
 
 
@@ -12,7 +13,7 @@ const NavBar = () => {
             <LeftDiv>
                 <LogoDiv>
                     <Link to="/">
-                        <Logo>Logo</Logo>
+                        <Logo src={logo}></Logo>
                     </Link>
                 </LogoDiv>
             </LeftDiv>
@@ -66,22 +67,11 @@ const LogoDiv = styled.div`
     align-items: center;
 `
 
-const Logo = styled.p`
-    margin-top: 0;
+const Logo = styled.img`
+    margin-top: 7px;
     margin-bottom: 0;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    height: 40px;
     transition: all .15s ease-out;
-
-    :focus{
-        border-bottom: 2px #00979d solid;
-        border-top: 2px #00979d solid;
-    }
-
-    :hover{
-        border-bottom: 2px #00979d solid;
-        border-top: 2px #00979d solid;
-    }
 `
 const RightDiv = styled.div`
     width: 75%;
