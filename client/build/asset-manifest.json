@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0105c15.chunk.css",
-    "main.js": "/static/js/main.2dbf8c49.chunk.js",
-    "main.js.map": "/static/js/main.2dbf8c49.chunk.js.map",
+    "main.css": "/static/css/main.5eb67380.chunk.css",
+    "main.js": "/static/js/main.7c6deddf.chunk.js",
+    "main.js.map": "/static/js/main.7c6deddf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.985e6003.js",
     "runtime-main.js.map": "/static/js/runtime-main.985e6003.js.map",
-    "static/js/2.20488efb.chunk.js": "/static/js/2.20488efb.chunk.js",
-    "static/js/2.20488efb.chunk.js.map": "/static/js/2.20488efb.chunk.js.map",
+    "static/js/2.071c6541.chunk.js": "/static/js/2.071c6541.chunk.js",
+    "static/js/2.071c6541.chunk.js.map": "/static/js/2.071c6541.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0396db95a9a54109f0b5a56ce6d617f4.js": "/precache-manifest.0396db95a9a54109f0b5a56ce6d617f4.js",
+    "precache-manifest.2062a8efb332aa84feed23802b8bbfce.js": "/precache-manifest.2062a8efb332aa84feed23802b8bbfce.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.d0105c15.chunk.css.map": "/static/css/main.d0105c15.chunk.css.map",
+    "static/css/main.5eb67380.chunk.css.map": "/static/css/main.5eb67380.chunk.css.map",
     "static/media/alfaCockpit.jpg": "/static/media/alfaCockpit.1f10a285.jpg",
     "static/media/alfaFront.jpg": "/static/media/alfaFront.b9f19072.jpg",
     "static/media/alfaInterior.jpg": "/static/media/alfaInterior.20f099b8.jpg",
     "static/media/alfaSide.jpg": "/static/media/alfaSide.09c8381e.jpg",
     "static/media/alfaWheel.jpg": "/static/media/alfaWheel.e97cbe33.jpg",
     "static/media/bentley.jpg": "/static/media/bentley.67c97796.jpg",
-    "static/media/cleanRims.jpg": "/static/media/cleanRims.8a0aa397.jpg",
+    "static/media/cleanInterior.jpeg": "/static/media/cleanInterior.717521f4.jpeg",
+    "static/media/cleanWheels.jpg": "/static/media/cleanWheels.8a0aa397.jpg",
     "static/media/conditionInterior.jpg": "/static/media/conditionInterior.0cbdd373.jpg",
     "static/media/doorJams.jpg": "/static/media/doorJams.55c5d9bf.jpg",
     "static/media/dust.jpg": "/static/media/dust.4ed3e015.jpg",
@@ -44,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.985e6003.js",
-    "static/js/2.20488efb.chunk.js",
-    "static/css/main.d0105c15.chunk.css",
-    "static/js/main.2dbf8c49.chunk.js"
+    "static/js/2.071c6541.chunk.js",
+    "static/css/main.5eb67380.chunk.css",
+    "static/js/main.7c6deddf.chunk.js"
   ]
 }

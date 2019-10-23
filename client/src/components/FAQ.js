@@ -12,7 +12,7 @@ const FAQ = () => {
             <Rows>
 
 
-                <Row>
+                <Row className="p1">
                     <HeadRow>
                         <HeadDiv>
                             <Head>"How much do you charge?"</Head>
@@ -24,7 +24,7 @@ const FAQ = () => {
                 </Row>
 
 
-                <Row>
+                <Row className="p1">
                     <HeadRow>
                         <HeadDiv>
                             <Head>"Will my paint get damaged?"</Head>
@@ -37,7 +37,7 @@ const FAQ = () => {
                 </Row>
 
 
-                <Row>
+                <Row className="p1">
                     <HeadRow>
                         <HeadDiv>
                             <Head>"Why not use a drive-thru carwash?"</Head>
@@ -49,7 +49,7 @@ const FAQ = () => {
                 </Row>
 
 
-                <Row>
+                <Row className="p1">
                     <HeadRow>
                         <HeadDiv>
                             <Head>"Will I have to drop my car off?"</Head>
@@ -69,11 +69,13 @@ export default FAQ;
 
 const MotherDiv = styled.div`
     width: 436px;
-    height: 575px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 
     @media(max-width: 500px) {
         width: 400px;
@@ -94,7 +96,7 @@ const FaqRow = styled.div`
 width: 100%;
 display: flex;
 justify-content: flex-start;
-margin-bottom: 20px;
+margin-bottom: 25px;
 `
 
 const FaqDiv = styled.div`
@@ -108,11 +110,19 @@ const FaqHead = styled.h3`
 
 // ROWS
 const Rows = styled.div`
+
     width: 100%;
 `
 
 const Row = styled.div`
-    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 35px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: lightgrey solid 2px;
 `
 
 const HeadRow = styled.div`

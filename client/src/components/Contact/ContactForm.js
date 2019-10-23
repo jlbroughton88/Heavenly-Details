@@ -110,6 +110,7 @@ const HeadDiv = styled.div`
     padding: 15px 20px;
     box-sizing: border-box;
     border-radius: 5px;
+    margin-bottom: 50px;
 
     @media(max-width: 550px) {
         width: 73%;

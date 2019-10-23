@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "56cd87f51b8cbd010aebe8d198f5ed2b",
+    "revision": "2c4b36c24738cbcb56902a7985e60a19",
     "url": "/index.html"
   },
   {
-    "revision": "c52fe6a5f80664d518dc",
-    "url": "/static/css/main.d0105c15.chunk.css"
+    "revision": "3331161adbe81249df0e",
+    "url": "/static/css/main.5eb67380.chunk.css"
   },
   {
-    "revision": "c8bd03653e4aa47e70cb",
-    "url": "/static/js/2.20488efb.chunk.js"
+    "revision": "09f2fa11fe666dbbbfa7",
+    "url": "/static/js/2.071c6541.chunk.js"
   },
   {
-    "revision": "c52fe6a5f80664d518dc",
-    "url": "/static/js/main.2dbf8c49.chunk.js"
+    "revision": "3331161adbe81249df0e",
+    "url": "/static/js/main.7c6deddf.chunk.js"
   },
   {
     "revision": "cbee8d858c084296ccff",
@@ -44,8 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bentley.67c97796.jpg"
   },
   {
+    "revision": "717521f49c0dc7ffe14d56cb7e2b35b4",
+    "url": "/static/media/cleanInterior.717521f4.jpeg"
+  },
+  {
     "revision": "8a0aa3973e330fdd25e68a16395fc9f6",
-    "url": "/static/media/cleanRims.8a0aa397.jpg"
+    "url": "/static/media/cleanWheels.8a0aa397.jpg"
   },
   {
     "revision": "0cbdd373741502a5544b8ad2cb1f8309",

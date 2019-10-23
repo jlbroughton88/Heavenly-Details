@@ -4,7 +4,7 @@ import NavBar from "../../NavBar";
 import Footer from "../../Footer";
 import styled from "styled-components";
 import vacuum from "../../images/photos/includedPics/vacuum.jpg";
-import wash from "../../images/photos/includedPics/wash.jpg";
+import cleanInterior from "../../images/photos/includedPics/cleanInterior.jpeg";
 import shampooFloorMats from "../../images/photos/includedPics/shampooFloorMats.jpeg";
 import steam from "../../images/photos/includedPics/steam.jpg";
 import dust from "../../images/photos/includedPics/dust.jpg";
@@ -13,33 +13,33 @@ import conditionInterior from "../../images/photos/includedPics/conditionInterio
 const includedArr = [
   {
     head: "Deep Clean",
-    image: wash,
-    body: "Wash inside and Out body"
+    image: cleanInterior,
+    body: "An intricate clean-up will prep your interior for the other processes that we will complete."
   },
   {
     head: "Shampoo",
     image: shampooFloorMats,
-    body: "Clean Rims Body"
+    body: "Floor mats are bound to get pretty dirty, that's a given...but they'll also one of the first pieces of the interior that you'll see. They might as well be clean too."
   },
   {
     head: "Steam",
     image: steam,
-    body: "Windows Body"
+    body: "Steam gets rid of all those seemingly stained areas."
   },
   {
     head: "Vacuum",
     image: vacuum,
-    body: "Door Jams Body"
+    body: "All those crumbs and bits on your floor and seats? Gone."
   },
   {
     head: "Dust",
     image: dust,
-    body: "Vacuum Body"
+    body: "Dust particles can build up over time and really become an eye-sore. Not to mention aggitate your allergies. We'll clean those up for you."
   },
   {
     head: "Protect & Condition",
     image: conditionInterior,
-    body: "Vacuum Body"
+    body: "Your interior plastics and leather are exposed to the sun all day, they need protection. Along with protecting, your interior hard surfaces will be given a nice, fresh finish."
   },
 
 ]
@@ -54,13 +54,16 @@ const Interior = () => {
 
         <IncludesDiv>
           {includedArr.map(incl =>
-            <IncludedBlock key={incl.head}>
+            <IncludedBlock className="p1" key={incl.head}>
               <Head>
                 {incl.head}
               </Head>
-              <Body>
-                {incl.body}
-              </Body>
+              <BodyDiv>
+                <Body>
+                  {incl.body}
+                </Body>
+              </BodyDiv>
+
               <Img src={incl.image}></Img>
 
             </IncludedBlock>
@@ -105,8 +108,9 @@ const IncludedBlock = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: #dedede;
+  // background: #dedede;
   border-radius: 5px;
+  border: lightgrey solid 2px;
   
 `
 
@@ -118,6 +122,14 @@ const Head = styled.h3`
 const Img = styled.img`
 width: 85%;
   border-radius: 5px;
+`
+
+const BodyDiv = styled.div`
+  width: 70%;
+
+  @media(max-width: 800px) {
+    width: 80%;
+  }
 `
 
 const Body = styled.p`

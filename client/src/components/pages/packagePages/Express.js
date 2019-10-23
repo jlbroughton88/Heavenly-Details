@@ -4,7 +4,7 @@ import NavBar from "../../NavBar";
 import Footer from "../../Footer";
 import styled from "styled-components";
 
-import cleanRims from "../../images/photos/includedPics/cleanRims.jpg";
+import cleanWheels from "../../images/photos/includedPics/cleanWheels.jpg";
 import windows from "../../images/photos/includedPics/windows.jpg";
 import doorJams from "../../images/photos/includedPics/doorJams.jpg";
 import vacuum from "../../images/photos/includedPics/vacuum.jpg";
@@ -14,27 +14,27 @@ const includedArr = [
   {
     head: "Wash Inside & Out",
     image: wash,
-    body: "Wash inside and Out body"
+    body: "An intricately executed wash, inside and out. This will prep the car's paint and interior for the other washing processes."
   },
   {
-    head: "Clean Rims",
-    image: cleanRims,
-    body: "Clean Rims Body"
+    head: "Clean Wheels",
+    image: cleanWheels,
+    body: "Brake dust and road debris can really ruin the look of wheels. Clean wheels are like clean shoes, they'll always look great."
   },
   {
     head: "Windows",
     image: windows,
-    body: "Windows Body"
+    body: "They've never been so clear! Waterspots will be gone, and they'll be extremely smooth to the touch."
   },
   {
     head: "Door Jams",
     image: doorJams,
-    body: "Door Jams Body"
+    body: "Often overlooked, this is one of the most dirty areas on your car. We'll clean 'em."
   },
   {
     head: "Vacuum",
     image: vacuum,
-    body: "Vacuum Body"
+    body: "All those crumbs and bits on your floor and seats? Gone."
   }
 ]
 
@@ -47,15 +47,16 @@ const Express = () => {
 
         <IncludesDiv >
           {includedArr.map(incl =>
-            <IncludedBlock key={incl.head}>
+            <IncludedBlock className="p1" key={incl.head}>
               <Head>
                 {incl.head}
               </Head>
-              <Body>
+              <BodyDiv>
+                            <Body>
                 {incl.body}
               </Body>
+              </BodyDiv>
               <Img src={incl.image}></Img>
-
             </IncludedBlock>
           )}
         </IncludesDiv>
@@ -98,7 +99,8 @@ const IncludedBlock = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: #dedede;
+  // background: #dedede;
+  border: lightgrey solid 2px;
   border-radius: 5px;
 `
 
@@ -110,6 +112,14 @@ const Head = styled.h3`
 const Img = styled.img`
   width: 85%;
   border-radius: 5px;
+`
+
+const BodyDiv = styled.div`
+  width: 70%;
+
+  @media(max-width: 800px) {
+    width: 80%;
+  }
 `
 
 const Body = styled.p`
