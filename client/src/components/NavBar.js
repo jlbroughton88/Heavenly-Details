@@ -105,12 +105,12 @@ const LinkP = styled.p`
     transition: all .15s ease-out;
 
     :focus{
-        border-bottom: 2px #00979d solid;
-        border-top: 2px #00979d solid;
+        border-top: 2px #ffffff solid;
+        border-bottom: 2px #ffffff solid;
     }
 
     :hover{
-        border-bottom: 2px #00979d solid;
-        border-top: 2px #00979d solid;
+        border-top: 2px #ffffff solid;
+        border-bottom: 2px #ffffff solid;
     }
 `
