@@ -20,9 +20,9 @@ const NavBar = () => {
 
             <RightDiv>
                 <NavLinks className="normalNav">
-                    <Link to="/about">
+                    {/* <Link to="/about">
                         <LinkP className="link">About</LinkP>
-                    </Link>
+                    </Link> */}
                     <Link to="/packages">
                         <LinkP className="link">Packages</LinkP>
                     </Link>

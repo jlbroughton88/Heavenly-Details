@@ -72,4 +72,5 @@ const Pic = styled.img`
    width: 100%;
     height: auto;
     border-radius: 5px;
+    border: 2px lightgrey solid;
 `

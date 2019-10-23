@@ -81,7 +81,7 @@ const PhotoBlock = styled.img`
     width: 300px;
     align-self: center;
     border-radius: 5px;
-    border: #00979d solid 2px;
+    border: lightgrey solid 2px;
 
 
     @media(max-width: 1100px) {
