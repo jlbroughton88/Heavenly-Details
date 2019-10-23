@@ -6,7 +6,7 @@ import styled from "styled-components";
     return (
         <MotherDiv>
             <Heading>Heavenly Details</Heading>
-            <Slogan>Catchy slogan here</Slogan>
+            <Slogan>Mobile Detailing in Charlotte, NC</Slogan>
             <CallToActionDiv>
                 <Link to="/contact"><CallToAction1>Contact Us!</CallToAction1></Link>
                 <Link to="/packages"><CallToAction2>Detail Packages</CallToAction2></Link>
