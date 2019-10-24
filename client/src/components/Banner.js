@@ -26,7 +26,8 @@ const MotherDiv = styled.div`
     align-items: flex-start;
     background: #ffffff;
 
-    @media(max-width: 500px) {
+    @media(max-width: 550px) {
+        align-items: center;
         height: 350px;
     }
 
@@ -66,7 +67,7 @@ const Heading = styled.h1`
 const Slogan = styled.h3`
     margin: 0;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
 
 
     @media(max-width: 475px) {
@@ -76,6 +77,7 @@ const Slogan = styled.h3`
     @media(max-width: 435px) {
         font-size: 1.09rem;
     } 
+    
 
     @media(max-width: 375px) {
         align-self: center;
@@ -85,10 +87,22 @@ const Slogan = styled.h3`
 
 const CallToActionDiv = styled.div`
     display: flex;
-    justify-content: flex-start;
+    // justify-content: flex-start;
     text-align: center;
     flex-direction: column;
-    width: 60%;
+    width: 400px;
+
+    @media(max-width: 550px) {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        justify-items: center;
+        width: 350px;
+    }
+
+    @media(max-width: 375px) {
+        width: 315px;
+    }
 `
 
 const CallToAction1 = styled.button`
@@ -98,14 +112,15 @@ const CallToAction1 = styled.button`
     width: 154px;
     display: flex;
     justify-content: center;
-    text-align: center
+    text-align: center;
+    align-self: flex-start;
     border: 2px lightgrey solid;
     background: #00979d;
     color: #ffffff;
     padding: 7px 10px;
     font-size: 1rem;
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transition: all .15s ease-out;
 
     :focus{

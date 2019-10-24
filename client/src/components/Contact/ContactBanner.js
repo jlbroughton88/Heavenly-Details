@@ -39,13 +39,10 @@ const MotherDiv = styled.div`
 const Container = styled.div`   
     display: flex; 
     flex-direction: column;
-
     justify-content: center;
     align-items: flex-start;
     background: #ffffff;
     margin: 0;
-
-
     `
 
 const Heading = styled.h1`
