@@ -19,18 +19,10 @@ const MotherDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-`
-
-const Container = styled.div`   
-    display: flex; 
-    flex-direction: column;
+    align-items: center;      
     height: 400px;
-    max-width: 625px;
-    justify-content: center;
-    align-items: flex-start;
-    background: #ffffff;
-
+    max-width: 625px;  
+    
     @media(max-width: 830px) {
         width: 75%;
     }
@@ -38,6 +30,18 @@ const Container = styled.div`
     @media(max-width: 500px) {
         width: 80%;
     }
+`
+
+const Container = styled.div`   
+    display: flex; 
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+    background: #ffffff;
+    margin: 0;
+
+
     `
 
 const Heading = styled.h1`

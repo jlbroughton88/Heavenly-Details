@@ -12,7 +12,7 @@ const FAQ = () => {
             <Rows>
 
 
-                <Row className="p1">
+                <Row className="">
                     <HeadRow>
                         <HeadDiv>
                             <Head>"How much do you charge?"</Head>
@@ -24,7 +24,7 @@ const FAQ = () => {
                 </Row>
 
 
-                <Row className="p1">
+                <Row className="">
                     <HeadRow>
                         <HeadDiv>
                             <Head>"Will my paint get damaged?"</Head>
@@ -37,7 +37,7 @@ const FAQ = () => {
                 </Row>
 
 
-                <Row className="p1">
+                <Row className="">
                     <HeadRow>
                         <HeadDiv>
                             <Head>"Why not use a drive-thru carwash?"</Head>
@@ -49,7 +49,7 @@ const FAQ = () => {
                 </Row>
 
 
-                <Row className="p1">
+                <Row className="">
                     <HeadRow>
                         <HeadDiv>
                             <Head>"Will I have to drop my car off?"</Head>

@@ -4,8 +4,8 @@ import Exterior from "./images/photos/exterior.jpeg"
 
 const HomePic1 = () => {
     return (
-        <MotherDiv>
-            <Container>
+        <MotherDiv className="p4">
+            <Container >
                 <Pic src={Exterior} alt="" />
             </Container>
         </MotherDiv>

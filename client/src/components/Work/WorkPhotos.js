@@ -31,7 +31,7 @@ const WorkPhotos = () => {
         <MotherDiv>
             <Container>
                 {pictureArr.map(pic =>
-                    <PhotoBlock key={pic} alt="yeet" src={`${pic}`}></PhotoBlock>
+                    <PhotoBlock key={pic} alt="Work Example" src={`${pic}`}></PhotoBlock>
                 )}
             </Container>
         </MotherDiv>
