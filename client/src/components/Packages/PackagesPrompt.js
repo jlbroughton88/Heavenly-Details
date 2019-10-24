@@ -26,7 +26,12 @@ const MotherDiv = styled.div`
     }
 
     @media(max-width: 500px) {
+        height: 300px;
         width: 80%;
+    }
+
+    @media(max-width: 375px) {
+        height: 250px;
     }
 `
 
@@ -41,4 +46,12 @@ const Para = styled.p`
     font-size: 1.2rem;
     margin: 0;
     text-align: start;
+
+    @media(max-width: 435px) {
+        font-size: 1.09rem;
+    } 
+
+    @media(max-width: 375px) {
+        font-size: 0.95rem;
+    }
 `

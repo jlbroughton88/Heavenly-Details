@@ -110,7 +110,6 @@ const FaqHead = styled.h3`
 
 // ROWS
 const Rows = styled.div`
-
     width: 100%;
 `
 
@@ -123,6 +122,15 @@ const Row = styled.div`
     padding: 15px 20px;
     border-radius: 5px;
     border: lightgrey solid 2px;
+
+    @media(max-width: 500px) {
+        padding: 10px 15px;
+        margin-bottom: 25px;
+    }
+
+    @media(max-width: 375px) {
+        margin-bottom: 15px;
+    }
 `
 
 const HeadRow = styled.div`
@@ -136,9 +144,14 @@ const HeadDiv = styled.div`
 
 const Head = styled.h3`
     margin: 0;
+    font-weight: bolder;
 
     @media(max-width: 437px) {
         font-size: 1.1rem;
+    }
+
+    @media(max-width: 375px) {
+        font-size: 1rem;
     }
 
 `
@@ -152,6 +165,10 @@ const Para = styled.p`
     padding-left: 5px;
     margin: 0;
     border-radius: 5px;
+
+    @media(max-width: 375px) {
+        font-size: 0.95rem;
+    }
 `
 
 

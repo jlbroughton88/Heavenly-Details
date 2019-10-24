@@ -15,7 +15,6 @@ const ContactBanner = () => {
 export default ContactBanner;
 
 const MotherDiv = styled.div`
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +27,12 @@ const MotherDiv = styled.div`
     }
 
     @media(max-width: 500px) {
+        height: 300px;
         width: 80%;
+    }
+
+    @media(max-width: 375px) {
+        height: 250px;
     }
 `
 
@@ -51,7 +55,7 @@ const Heading = styled.h1`
 
 `
 
-const Para = styled.h3`
+const Para = styled.p`
     margin: 0;
     font-size: 1.2rem;
 
@@ -61,7 +65,6 @@ const Para = styled.h3`
     } 
 
     @media(max-width: 375px) {
-        align-self: center;
-        font-size: 1.06rem;
+        font-size: 0.95rem;
     }
 `

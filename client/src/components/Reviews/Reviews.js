@@ -86,8 +86,8 @@ export default Reviews;
 
 const MotherDiv = styled.div`
     display: flex;
-    align-items: center;
-    height: 450px;
+    align-items: center;    
+    height: 500px;
     width: 600px;
     
 
@@ -102,11 +102,11 @@ const MotherDiv = styled.div`
     }
 
     @media(max-width: 500px) {
-        height: 525px;
         width: 400px;
     }
 
     @media(max-width: 430px) {
+
         width: 350px;
     }
 

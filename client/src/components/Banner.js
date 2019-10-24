@@ -24,6 +24,14 @@ const MotherDiv = styled.div`
     justify-content: center;
     align-items: flex-start;
     background: #ffffff;
+
+    @media(max-width: 500px) {
+        height: 350px;
+    }
+
+    @media(max-width: 375px) {
+        height: 300px;
+    }
 `
 
 const Heading = styled.h1`
@@ -98,8 +106,10 @@ const CallToAction1 = styled.button`
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     }
 
-    @media(max-width: 375px) {
+    @media(max-width: 375px) { 
         font-size: 0.9rem;
+        margin-bottom: 10px;
+        width: 140px;
     }
 `
 
@@ -117,7 +127,6 @@ const CallToAction2 = styled.button`
     padding: 7px 10px;
     font-size: 1rem;
     border-radius: 4px;
-    
     transition: all .15s ease-out;
 
     :focus{
@@ -128,8 +137,9 @@ const CallToAction2 = styled.button`
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     }
 
-
-    @media(max-width: 375px) {
+    @media(max-width: 375px) { 
         font-size: 0.9rem;
+        margin-bottom: 10px;
+        width: 140px;
     }
 `

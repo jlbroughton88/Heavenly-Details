@@ -113,7 +113,11 @@ const HeadDiv = styled.div`
     margin-bottom: 50px;
 
     @media(max-width: 550px) {
-        width: 73%;
+        width: 80%;
+    }
+
+    @media(max-width: 500px) {
+        margin-bottom: 30px;
     }
     
 `
@@ -142,11 +146,19 @@ const Form = styled.form`
     @media(max-width: 550px) {
         margin-bottom: 65px;
     }
+
+    @media(max-width: 375px) {
+        margin-bottom: 35px;
+    }
 `
 
 const NameDiv = styled.div`
     margin-bottom: 20px;
-    width: 80%;
+    width: 85%;
+
+    @media(max-width: 500px) {
+        margin-bottom: 10px;
+    }
 `
 
 const NameInput = styled.input`
@@ -158,12 +170,21 @@ const NameInput = styled.input`
     border-radius: 5px;
     padding: 15px 20px;
     box-sizing: border-box;
+
+    @media(max-width: 375px) {
+        font-size: 1.05rem;
+        padding: 10px 15px;
+    }
 `
 
 const EmailInputDiv = styled.div`
     margin-bottom: 20px;
-    width: 80%;
+    width: 85%;
     align-self: center;
+
+    @media(max-width: 500px) {
+        margin-bottom: 10px;
+    }
 `
 
 const EmailInput = styled.input`
@@ -175,13 +196,22 @@ const EmailInput = styled.input`
     border-radius: 5px;
     padding: 15px 20px;
     box-sizing: border-box;
+
+    @media(max-width: 375px) {
+        font-size: 1.05rem;
+        padding: 10px 15px;
+    }
 `
 
 const MessageDiv = styled.div`
     margin: 0;
     margin-bottom: 20px
     height: 100px;
-    width: 80%;
+    width: 85%;
+
+    @media(max-width: 500px) {
+        margin-bottom: 10px;
+    }
 `
 
 const MessageInput = styled.textarea`
@@ -193,11 +223,16 @@ const MessageInput = styled.textarea`
     margin: 0;
     padding: 15px 20px;
     box-sizing: border-box;
+
+    @media(max-width: 375px) {
+        font-size: 1.05rem;
+        padding: 10px 15px;
+    }
 `
 
 const SubmitDiv = styled.div`
     margin-bottom: 20px;
-    width: 80%;
+    width: 85%;
 `
 
 const SubmitBtn = styled.button`
@@ -211,6 +246,12 @@ const SubmitBtn = styled.button`
     color: #00979d;
     transition: all .15s ease-out;
     cursor: pointer;
+    padding: 10px 15px;
+
+    @media(max-width: 375px) {
+        font-size: 1.05rem;
+        padding: 5px 10px;
+    }
 
     :focus{
         box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
@@ -245,11 +286,19 @@ const Info = styled.div`
         margin-bottom: 100px;
     }
 
+    @media(max-width: 375px) {
+        margin-bottom: 50px;
+    }
+
     
 
 `
 
 const CallDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     text-align: left;
     margin-bottom: 30px;
     height: 88px;
@@ -262,7 +311,13 @@ const CallDiv = styled.div`
     } 
 
     @media(max-width: 650px) {
-        width: 80%;
+        width: 85%;
+    }
+
+    @media(max-width: 375px) {
+        height: 75px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
     }
     
 `
@@ -272,13 +327,25 @@ const CallH = styled.h3`
     font-size: 1.6rem;
     margin: 0;
     margin-bottom: 10px;
+
+    @media(max-width: 375px) {
+        font-size: 1.5rem;
+    }
 `
 
 const CallP = styled.p`
     margin: 0;
+
+    @media(max-width: 375px) {
+        font-size: 0.95rem;
+    }
 `
 
 const EmailDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     text-align: left;
     margin-bottom: 20px;
     height: 88px;
@@ -291,7 +358,12 @@ const EmailDiv = styled.div`
     } 
 
     @media(max-width: 650px) {
-        width: 80%;
+        width: 85%;
+    }
+
+    @media(max-width: 375px) {
+        height: 75px;
+        padding: 10px 15px;
     }
 
 `
@@ -301,10 +373,18 @@ const EmailH = styled.h3`
     font-size: 1.6rem;
     margin: 0;
     margin-bottom: 10px;
+
+    @media(max-width: 375px) {
+        font-size: 1.5rem;
+    }
 `
 
 const EmailP = styled.p`
     margin: 0;
+
+    @media(max-width: 375px) {
+        font-size: 0.95rem;
+    }
 `
 
 const CTAParent = styled.div`
