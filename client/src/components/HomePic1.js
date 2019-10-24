@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import Exterior from "./images/photos/exterior.jpeg"
+import Exterior from "./images/photos/exterior.jpeg";
 
 const HomePic1 = () => {
     return (

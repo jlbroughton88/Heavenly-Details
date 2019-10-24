@@ -1,6 +1,7 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React from 'react';
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Exterior from "./images/photos/exterior.jpeg";
 
  const Banner = () => {
     return (
@@ -35,21 +36,30 @@ const MotherDiv = styled.div`
 `
 
 const Heading = styled.h1`
-    font-size: 3rem;
+    font-size: 5rem;
     margin: 0;
     margin-bottom: 20px;
+    font-family: tahu;
 
-    @media(max-width: 475px) {
-        font-size: 2.9rem;
+    @media(max-width: 550px) {
+        font-size: 4.75rem;
     }
 
-    @media(max-width: 435px) {
-        font-size: 2.3rem;   
+    @media(max-width: 500px) {
+        font-size: 4.5rem;
+    }
+
+    @media(max-width: 475px) {
+        font-size: 3.7rem;   
+    }
+
+    @media(max-width: 415px) {
+        align-self: center;
+        font-size: 3.3rem;
     }
 
     @media(max-width: 375px) {
-        align-self: center;
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
 `
 

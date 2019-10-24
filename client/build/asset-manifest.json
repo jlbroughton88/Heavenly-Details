@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.75cbb44e.chunk.css",
-    "main.js": "/static/js/main.3d2a15f3.chunk.js",
-    "main.js.map": "/static/js/main.3d2a15f3.chunk.js.map",
+    "main.css": "/static/css/main.6c9f4adf.chunk.css",
+    "main.js": "/static/js/main.c5feb085.chunk.js",
+    "main.js.map": "/static/js/main.c5feb085.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.985e6003.js",
     "runtime-main.js.map": "/static/js/runtime-main.985e6003.js.map",
-    "static/js/2.0ea3fdc6.chunk.js": "/static/js/2.0ea3fdc6.chunk.js",
-    "static/js/2.0ea3fdc6.chunk.js.map": "/static/js/2.0ea3fdc6.chunk.js.map",
+    "static/js/2.a57c606e.chunk.js": "/static/js/2.a57c606e.chunk.js",
+    "static/js/2.a57c606e.chunk.js.map": "/static/js/2.a57c606e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.80ee11c99193e0595b08c3f43cff368e.js": "/precache-manifest.80ee11c99193e0595b08c3f43cff368e.js",
+    "precache-manifest.5584a102abd02c32381175bcc07f034e.js": "/precache-manifest.5584a102abd02c32381175bcc07f034e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.75cbb44e.chunk.css.map": "/static/css/main.75cbb44e.chunk.css.map",
+    "static/css/main.6c9f4adf.chunk.css.map": "/static/css/main.6c9f4adf.chunk.css.map",
     "static/media/alfaCockpit.jpg": "/static/media/alfaCockpit.1f10a285.jpg",
     "static/media/alfaFront.jpg": "/static/media/alfaFront.b9f19072.jpg",
     "static/media/alfaInterior.jpg": "/static/media/alfaInterior.20f099b8.jpg",
@@ -33,7 +33,7 @@
     "static/media/lexusSuvInterior.jpg": "/static/media/lexusSuvInterior.eede8d5a.jpg",
     "static/media/lexusSuvSide.jpg": "/static/media/lexusSuvSide.8a7f2200.jpg",
     "static/media/lexusSuvSide2.jpg": "/static/media/lexusSuvSide2.ccc20879.jpg",
-    "static/media/index.css": "/static/media/museoSans.5b9453f7.ttf",
+    "static/media/index.css": "/static/media/tahu.98c36c6d.ttf",
     "static/media/steam.jpg": "/static/media/steam.8cadeec6.jpg",
     "static/media/tireShine.png": "/static/media/tireShine.7d5672a6.png",
     "static/media/triumphFront.jpg": "/static/media/triumphFront.29317cc5.jpg",
@@ -45,8 +45,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.985e6003.js",
-    "static/js/2.0ea3fdc6.chunk.js",
-    "static/css/main.75cbb44e.chunk.css",
-    "static/js/main.3d2a15f3.chunk.js"
+    "static/js/2.a57c606e.chunk.js",
+    "static/css/main.6c9f4adf.chunk.css",
+    "static/js/main.c5feb085.chunk.js"
   ]
 }

@@ -36,6 +36,11 @@ a{
     src: url("./components/fonts/museoSans.ttf") format("TrueType");
   }
 
+  @font-face {
+    font-family:"tahu";
+    src: url("./components/fonts/tahu.ttf") format("TrueType");
+  }
+
 @media(min-width: 651px) {
     .normalNav{ display: inline-block};
     .link{ display: inline-block };
