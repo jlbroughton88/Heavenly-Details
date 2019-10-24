@@ -34,6 +34,10 @@ const Container = styled.div`
     @media(max-width: 830px) {
         width: 75%;
     }
+
+    @media(max-width: 500px) {
+        width: 80%;
+    }
     `
 
 const Heading = styled.h1`
@@ -46,4 +50,14 @@ const Heading = styled.h1`
 const Para = styled.h3`
     margin: 0;
     font-size: 1.2rem;
+
+
+    @media(max-width: 435px) {
+        font-size: 1.09rem;
+    } 
+
+    @media(max-width: 375px) {
+        align-self: center;
+        font-size: 1.06rem;
+    }
 `

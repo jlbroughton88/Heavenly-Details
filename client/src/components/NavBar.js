@@ -53,22 +53,27 @@ const MotherDiv = styled.nav`
     min-height: 55px;
     top: 0;
     position: sticky;
+    z-index: 3;
 `
 const LeftDiv = styled.div`
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 550px) {
+        width: 35%;
+    }
 `
 
 const LogoDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3px;
 `
 
 const Logo = styled.img`
-    margin-top: 7px;
     margin-bottom: 0;
     height: 40px;
     transition: all .15s ease-out;

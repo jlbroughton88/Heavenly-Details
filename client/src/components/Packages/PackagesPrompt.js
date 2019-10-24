@@ -24,6 +24,10 @@ const MotherDiv = styled.div`
     @media(max-width: 830px) {
         width: 75%;
     }
+
+    @media(max-width: 500px) {
+        width: 80%;
+    }
 `
 
 const Head = styled.h2`

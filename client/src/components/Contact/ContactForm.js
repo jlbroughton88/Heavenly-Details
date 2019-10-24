@@ -138,6 +138,10 @@ const Form = styled.form`
     @media(max-width: 839px) {
         margin-bottom: 100px;
     }
+
+    @media(max-width: 550px) {
+        margin-bottom: 65px;
+    }
 `
 
 const NameDiv = styled.div`
@@ -240,6 +244,8 @@ const Info = styled.div`
         align-items: center;
         margin-bottom: 100px;
     }
+
+    
 
 `
 
